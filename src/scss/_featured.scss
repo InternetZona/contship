@@ -1,0 +1,26 @@
+.featured__item{
+  padding: 2rem;
+  position: relative;
+
+  &:before{
+    content: "";
+    position: absolute;
+    border: 2px solid $primary-color;
+    height:0;
+    top: 5.8rem;
+    width: 4rem;
+  }
+
+  .icons{
+    line-height: normal;
+    margin-bottom: 1.3rem;
+    color: $primary-color;
+  }
+
+  .title{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+  }
+}
