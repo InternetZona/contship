@@ -1,0 +1,33 @@
+/*
+ * Project variables
+ */
+
+// Font
+
+@font-face{
+  font-family:'A Futura Round';
+  src: url(../fonts/AFuturaRound.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/AFuturaRound.woff) format("woff"),
+    url(../fonts/AFuturaRound.ttf) format("truetype"),
+    url(../fonts/AFuturaRound.svg#AFuturaRound) format("svg");
+  font-weight:400;
+  font-style:normal
+}
+
+@font-face{
+  font-family:'A Futura Round';
+  src: url(../fonts/AFuturaRoundDemi.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/AFuturaRoundDemi.woff) format("woff"),
+    url(../fonts/AFuturaRoundDemi.ttf) format("truetype"),
+    url(../fonts/AFuturaRoundDemi.svg#AFuturaRoundDemi) format("svg");
+  font-weight:700;
+  font-style:normal
+}
+
+$font-stack: -apple-system, BlinkMacSystemFont, 'A Futura Round', sans-serif !default;
+
+
+
+
+
+@import '../../node_modules/materialize-css/sass/materialize';
