@@ -26,8 +26,13 @@
 
 $font-stack: -apple-system, BlinkMacSystemFont, 'A Futura Round', sans-serif !default;
 
+// Custom colors
+$primary-color: #016db6;
+
 
 
 
 
 @import '../../node_modules/materialize-css/sass/materialize';
+@import 'core';
+@import 'header';

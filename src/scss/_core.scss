@@ -1,0 +1,12 @@
+.container{
+  .row{
+    margin-left: -.75rem;
+    margin-right: -.75rem;
+  }
+}
+
+html {
+  @media #{$small-and-down} {
+    font-size: 13px;
+  }
+}

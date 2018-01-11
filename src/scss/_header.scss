@@ -1,0 +1,43 @@
+header{
+  height: 7rem;
+  line-height: 7rem;
+
+  .info-box{
+    position: relative;
+
+    @media #{$large-and-up} {
+      padding: 0 1rem;
+    }
+
+    i{
+      position: absolute;
+      line-height: 7rem;
+      color: $primary-color;
+      font-size: 38px;
+    }
+
+    .info-box__item {
+      text-align: center;
+      line-height: normal;
+
+      @media #{$large-and-up}{
+        padding-left: 3rem;
+      }
+
+      > * {
+        display: inline-block;
+        width: 100%;
+        font-weight: bold;
+      }
+
+      > span {
+        padding-top: 1.8rem;
+        text-transform: uppercase;
+      }
+
+      > a{
+        padding-top: .9rem;
+      }
+    }
+  }
+}
