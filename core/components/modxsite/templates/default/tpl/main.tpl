@@ -4,5 +4,6 @@
     <div class="section"></div>
 
     {include file="views/sections/featured.tpl"}
+    {include file="views/sections/featured.form.tpl"}
     {include file="views/sections/contacts.tpl"}
 {/block}

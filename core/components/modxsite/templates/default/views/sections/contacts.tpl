@@ -1,4 +1,4 @@
-<div id="contacts" class="section">
+<section id="contacts">
     <div class="container">
         <div class="row">
             <div class="col s9">
@@ -41,4 +41,4 @@
             </div>
         </div>
     </div>
-</div>
+</section>

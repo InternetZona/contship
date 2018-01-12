@@ -24,3 +24,28 @@
     text-transform: capitalize;
   }
 }
+
+#featured-form{
+  position: relative;
+
+  [class*="__item"]{
+    padding-left: 5rem;
+    position: relative;
+    margin: 3rem 0;
+
+    .iconbox{
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  .form-wrapper{
+    padding: 2rem;
+    position: absolute;
+    top: 20px;
+    left: .75rem;
+    right: .75rem;
+    bottom: 20px;
+    background-color: $primary-color;
+  }
+}

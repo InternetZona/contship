@@ -1,4 +1,4 @@
-<div id="featured" class="section">
+<section id="featured">
     <div class="container">
         <div class="row">
             <div class="col s4">
@@ -45,4 +45,4 @@
             </div>
         </div>
     </div>
-</div>
+</section>
