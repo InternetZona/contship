@@ -24,6 +24,8 @@
 
     </div>
 
+    {include file="views/modals.tpl"}
+
     <script src="{$template_url}js/scripts.min.js?{filemtime(MODX_BASE_PATH|cat:$template_url|cat:'js/scripts.min.js')}"></script>
 </body>
 </html>

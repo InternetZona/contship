@@ -1,13 +1,24 @@
 .featured__item{
-  padding: 2rem;
+  display: block;
+  padding: 1.5rem 2rem;
   position: relative;
+  background-color: white;
+  border: 2px solid color('grey', 'lighten-3');
+  margin-top: .75rem;
+  margin-bottom: .75rem;
+  color: $off-black!important;
+
+  &:hover,
+  &:focus{
+    border-color: $primary-color;
+  }
 
   &:before{
     content: "";
     position: absolute;
     border: 2px solid $primary-color;
     height:0;
-    top: 5.8rem;
+    top: 5.3rem;
     width: 4rem;
   }
 

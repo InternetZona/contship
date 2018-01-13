@@ -1,4 +1,4 @@
-<section id="featured-form" class="white">
+<section id="featured-form">
     <div class="container">
         <div class="row grid">
             <div class="col s6 cell">
