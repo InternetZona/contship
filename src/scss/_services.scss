@@ -8,10 +8,19 @@
     margin-top: .75rem;
     margin-bottom: .75rem;
     color: $off-black!important;
+    transition: all 0.3s ease 0s;
 
     &:hover,
     &:focus{
       border-color: $primary-color;
+
+      .icons{
+        color: $secondary-color;
+      }
+
+      &:before{
+        border-color: $secondary-color;
+      }
     }
 
     &:before{
@@ -27,6 +36,7 @@
       line-height: normal;
       margin-bottom: 1.3rem;
       color: $primary-color;
+      transition: all 0.3s ease 0s;
     }
 
     .title{

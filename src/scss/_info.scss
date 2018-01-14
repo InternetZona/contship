@@ -1,6 +1,10 @@
 #info{
   position: relative;
 
+  h1{
+    font-weight: bold;
+  }
+
   [class*="__item"]{
     padding-left: 5rem;
     position: relative;
@@ -10,5 +14,9 @@
       position: absolute;
       left: 0;
     }
+  }
+
+  .btn{
+    margin-top: 1rem;
   }
 }

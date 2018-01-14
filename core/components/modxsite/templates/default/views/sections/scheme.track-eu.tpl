@@ -1,6 +1,6 @@
-<section id="scheme-track-eu">
+<section id="scheme-track-eu" class="section">
     <div class="container">
-        <div class="h4 text-bold center-align">Доставка сборного груза из Европы</div>
+        <div class="h4 text-bold center-align __title">Доставка сборного груза из Европы</div>
         <div class="row">
             <div class="col s12">
                 <ul class="scheme">
@@ -46,15 +46,6 @@
                             <p>Доставка товара до склада клиента по территории РФ</p>
                         </div>
                     </li>
-                </ul>
-            </div>
-            <div class="col s4">
-                <div class="h5 text-bold">Преимущества:</div>
-                <ul>
-                    <li>Склады консолидации: Германия, Литва, Венгрия</li>
-                    <li>Экономия на стоимости доставки</li>
-                    <li>Быстрая доставка</li>
-                    <li>Оплата после завершения процедуры таможенного офрмления</li>
                 </ul>
             </div>
         </div>

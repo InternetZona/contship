@@ -1,6 +1,6 @@
-<section id="scheme-work">
+<section id="scheme-work" class="section">
     <div class="container">
-        <div class="h4 text-bold center-align">Схема работы</div>
+        <div class="h4 text-bold center-align __title">Схема работы</div>
         <div class="row grid">
             <div class="col s3 cell">
                 <div class="work-schema__item">

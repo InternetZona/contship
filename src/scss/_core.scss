@@ -52,3 +52,10 @@ html {
 .text-bold{
   font-weight: bold;
 }
+
+section{
+  [class*="__title"]{
+    position: relative;
+    padding-bottom: 1rem;
+  }
+}

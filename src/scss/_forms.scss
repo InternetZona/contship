@@ -1,3 +1,60 @@
+.request-form-block {
+  background-color: $primary-color;
+
+  .container{
+    .row{
+      margin-bottom: 0;
+    }
+  }
+
+  .__wrapper{
+    position: relative;
+    margin-bottom: 4rem;
+
+    > a{
+      position: absolute;
+      top: -28px;
+      left: 28px;
+
+      @extend .z-depth-0;
+
+      >i{
+        color: $secondary-color;
+      }
+    }
+  }
+
+  .form-wrapper{
+    padding: 20px;
+    position: relative;
+    top: -20px;
+    background: white;
+
+    @extend .z-depth-4;
+
+    .form-title{
+      font-size: .9rem;
+      text-transform: uppercase;
+      margin-top: 0;
+      line-height: 1.5rem;
+      padding-bottom: 10px;
+      border-bottom: 1px solid color('grey', 'lighten-3');
+    }
+  }
+}
+
 form {
-  &.request{ }
+
+  p{
+    label {
+      height: auto;
+    }
+  }
+
+  input[type="checkbox"] {
+    + span{
+      font-size:.8rem!important;
+      line-height: 1rem!important;
+    }
+  }
 }
