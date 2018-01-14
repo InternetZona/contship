@@ -25,7 +25,7 @@
                     <li>
                         <div class="schena-track-eu__item">
                             <div class="icons"> <i class="flaticon-delivery-truck"></i></div>
-                            <p>Доставка зборного груза</p>
+                            <p>Доставка сборного груза</p>
                         </div>
                     </li>
                     <li>

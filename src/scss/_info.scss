@@ -1,0 +1,14 @@
+#info{
+  position: relative;
+
+  [class*="__item"]{
+    padding-left: 5rem;
+    position: relative;
+    margin: 3rem 0;
+
+    .iconbox{
+      position: absolute;
+      left: 0;
+    }
+  }
+}

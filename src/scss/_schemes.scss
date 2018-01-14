@@ -26,13 +26,30 @@
     display: flex;
     justify-content: center;
 
-    li{
-      max-width: calc(100%/7);
+    li {
+      width: calc(100% / 7);
+
+      + li {
+        [class*="__item"] {
+          .icons {
+            &:before {
+              content: "";
+              position: absolute;
+              left: -.3rem;
+              top: 50%;
+              margin-top: -.6rem;
+              border: .6rem solid transparent;
+              border-left-color: black;
+            }
+          }
+        }
+      }
     }
   }
 
   [class*="__item"] {
     .icons{
+      position: relative;
       text-align: center;
 
       > i {
