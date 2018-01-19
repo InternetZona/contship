@@ -1,4 +1,7 @@
 <section class="request-form-block">
+    <div class="parallax-container">
+        <div class="parallax"><img src="{$template_url}images/parallax.jpg"></div>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col s6 white-text">
@@ -7,7 +10,7 @@
                         <i class="material-icons">arrow_downward</i>
                     </a>
                 </div>
-                <div class="h5 text-bold">Преимущества:</div>
+                <div class="h5 text-bold">[[%contship.featured]]</div>
                 <ul class="featured-list">
                     <li><i class="material-icons">adjust</i> Склады консолидации: Германия, Литва, Венгрия</li>
                     <li><i class="material-icons">adjust</i> Экономия на стоимости доставки</li>

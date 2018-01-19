@@ -1,25 +1,4 @@
-#contacts {
-  .list{
-    > li {
 
-      &:first-child{
-        margin-bottom: 1rem;
-        font-size: 1.4rem;
-        font-weight: bold;
-      }
-
-      + li {
-        margin-bottom: .75rem;
-        font-size: 1.1rem;
-        color: color('grey', 'darken-2');
-
-        > a {
-          color: $primary-color;
-        }
-      }
-    }
-  }
-}
 
 .featured-list{
   padding-left: 1rem;

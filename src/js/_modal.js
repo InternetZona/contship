@@ -1,4 +1,8 @@
 function _modal() {
-    var elem = document.querySelector('.modal');
-    var instance = M.Modal.init(elem);
+    var elems = document.querySelectorAll('.modal');
+
+    [].forEach.call(elems, function(elem){
+        var instance = M.Modal.init(elem);
+
+    });
 }

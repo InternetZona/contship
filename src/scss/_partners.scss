@@ -1,0 +1,36 @@
+#partners{
+  .carousel{
+    height: 200px;
+    padding-bottom:50px;
+    box-sizing: content-box;
+
+    .carousel-item{
+      width: 200px;
+      height: 150px;
+      opacity: 1!important;
+      border: 2px solid transparent;
+      transition: border-color .3s ease 0s;
+
+      > img {
+        margin: 1rem;
+      }
+
+      &:hover{
+        border-color: $primary-color;
+      }
+    }
+
+    .indicators{
+      .indicator-item{
+        width: 16px;
+        height: 4px;
+        border-radius: 0;
+        background-color: rgba($secondary-color, .2);
+
+        &.active{
+          background-color: $primary-color;
+        }
+      }
+    }
+  }
+}

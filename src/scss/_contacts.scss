@@ -1,0 +1,46 @@
+#contactus {
+  .__list{
+
+    > li {
+
+      &:first-child{
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+        font-weight: bold;
+
+        >span{
+          border-bottom: 2px solid color('grey', 'lighten-3');
+          padding: 0 .75rem 0 .4rem!important;
+        }
+      }
+
+      + li {
+        margin-bottom: .75rem;
+        font-size: 1rem;
+        padding-left: 1rem;
+
+        > a{
+          color: $secondary-color;
+
+          &:hover,
+          &:focus,
+          &:active{
+            color: $primary-color;
+          }
+        }
+      }
+    }
+
+    &[class*="__icons"] {
+
+      > li {
+        padding-left: 0;
+
+        > i {
+          font-size: 1rem;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}

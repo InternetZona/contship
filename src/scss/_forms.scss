@@ -1,5 +1,15 @@
 .request-form-block {
-  background-color: $primary-color;
+  background-color: rgba($primary-color, .85);
+  position: relative;
+
+  .parallax-container{
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%!important;
+  }
 
   .container{
     .row{
@@ -43,18 +53,85 @@
   }
 }
 
-form {
+#callback {
+  form{
+    .input-field{
 
+      .prefix{
+        color: white!important;
+      }
+
+      input{
+        border-bottom: 2px solid white!important;
+        color: white!important;
+
+        + label {
+          color: white!important;
+        }
+      }
+    }
+
+    p{
+      margin: 0;
+
+      label{
+        color: white;
+
+        input {
+          +span{
+            &:before{
+              border-color: white;
+            }
+          }
+
+          &:checked{
+            +span{
+              &:before{
+                border-top-color: transparent;
+                border-left-color: transparent;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+form {
   p{
     label {
       height: auto;
+
+      input[type="checkbox"] {
+        + span{
+          font-size:.8rem!important;
+          line-height: 1rem!important;
+        }
+      }
     }
   }
 
-  input[type="checkbox"] {
-    + span{
-      font-size:.8rem!important;
-      line-height: 1rem!important;
+  .input-field{
+    .prefix{
+      left: 12px;
+      top: 50%;
+      margin-top: -11px;
+      font-size: 1.5rem;
+
+      +input,
+      +textarea{
+        margin: 0!important;
+        padding-left: 3rem!important;
+        box-shadow: none!important;
+
+        + label {
+
+          &.active{
+            display: none;
+          }
+        }
+      }
     }
   }
 }

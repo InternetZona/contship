@@ -13,14 +13,6 @@
     &:hover,
     &:focus{
       border-color: $primary-color;
-
-      .icons{
-        color: $secondary-color;
-      }
-
-      &:before{
-        border-color: $secondary-color;
-      }
     }
 
     &:before{
@@ -43,7 +35,6 @@
       margin-top: 0;
       margin-bottom: 0;
       font-size: 1.3rem;
-      text-transform: capitalize;
     }
   }
 }
