@@ -1,0 +1,30 @@
+#countries{
+  .__item{
+    margin-top: 2rem;
+
+    a{
+      position: relative;
+      display: inline-block;
+      line-height: 36px;
+      padding-left: 45px;
+      font-weight: bold;
+      text-transform: uppercase;
+
+      &:focus,
+      &:active,
+      &:hover{
+        opacity: 0.8;
+        color: $secondary-color;
+      }
+
+      i{
+        position: absolute;
+        left: 0;
+        width: 36px;
+        height: 36px;
+        top: 50%;
+        margin-top: -18px;
+      }
+    }
+  }
+}

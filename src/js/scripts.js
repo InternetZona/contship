@@ -6,6 +6,9 @@
 //= _modal.js
 //= _carousel.js
 //= _parallax.js
+//= _tabs.js
+//= _tooltip.js
+//= _lang.js
 
 var App = {
     init: function () {
@@ -13,6 +16,10 @@ var App = {
         _modal();
         _carousel();
         _parallax();
+        _tabs();
+        _tooltip();
+        _langbar();
+        document.querySelector('body').classList.add('loaded');
     }
 };
 

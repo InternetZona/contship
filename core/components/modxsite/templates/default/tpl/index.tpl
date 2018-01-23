@@ -1,7 +1,7 @@
 <html>
 <head>
+    {snippet name="MetaX@MetaX"}
 
-    {snippet name="MetaX@Meta"}
     <title>{field name=longtitle}</title>
     <link type="text/css" rel="stylesheet" href="{$template_url}css/style.min.css?{filemtime(MODX_BASE_PATH|cat:$template_url|cat:'css/style.min.css')}"  media="screen,projection"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -9,10 +9,13 @@
 </head>
 <body>
 
+    {include file="views/loader.tpl"}
+    {include file="views/svg.tpl"}
+
     <div id="main">
 
         {include file="views/header.tpl"}
-        {include file="views/navbar.tpl"}
+        {include file="views/navbar/index.tpl"}
 
         {block name=body}
 
@@ -24,8 +27,8 @@
 
     </div>
 
-    {include file="views/modals.tpl"}
+    {include file="views/lang/desktop.tpl"}
 
-    <script src="{$template_url}js/scripts.min.js?{filemtime(MODX_BASE_PATH|cat:$template_url|cat:'js/scripts.min.js')}"></script>
+    <script async src="{$template_url}js/scripts.min.js?{filemtime(MODX_BASE_PATH|cat:$template_url|cat:'js/scripts.min.js')}"></script>
 </body>
 </html>

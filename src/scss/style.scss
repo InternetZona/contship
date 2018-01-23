@@ -34,6 +34,7 @@ $secondary-color: #212121;
 
 
 @import '../../node_modules/materialize-css/sass/materialize';
+@import 'loader';
 @import 'flaticon';
 @import 'core';
 @import 'header';
@@ -43,9 +44,12 @@ $secondary-color: #212121;
 @import 'lists';
 @import 'forms';
 @import 'schemes';
-@import 'partners';
+@import 'clients';
 @import 'blog';
 @import 'contacts';
 @import 'fontello';
 @import 'featured';
 @import 'callback';
+@import 'footer';
+@import 'lang';
+@import 'countries';

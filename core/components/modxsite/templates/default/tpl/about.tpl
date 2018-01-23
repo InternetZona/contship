@@ -8,5 +8,17 @@
             </div>
         </div>
     </div>
-    {include file="views/sections/featured/base.tpl"}
+
+    {if $tvData = {tv name=featured}|json_decode:true}
+        <div id="featured" class="section">
+            <div class="row">
+                {foreach $tvData as $data}
+                    <div class="col s12 m6 l3">
+                        {include file="views/featured/item.tpl" data=$data}
+                    </div>
+                {/foreach}
+            </div>
+        </div>
+    {/if}
+
 {/block}

@@ -2,7 +2,7 @@
     <div class="container">
         <div class="h4 text-bold center-align __title">[[%contship.blog_title]]</div>
         <div class="row">
-            <div class="col s4">
+            <div class="col s12 m6 xl4">
                 <div class="__item">
                     <a class="__image" href="{$object.uri}">
                             <img alt="{$object.pagetitle}" class="responsive-img" src="//cdn.shopify.com/s/files/1/1528/2387/articles/9_555x370.jpg?v=1487592984">
@@ -13,7 +13,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col s4">
+            <div class="col s12 m6 xl4">
                 <div class="__item">
                     <a class="__image" href="{$object.uri}">
                             <img alt="{$object.pagetitle}" class="responsive-img" src="//cdn.shopify.com/s/files/1/1528/2387/articles/9_555x370.jpg?v=1487592984">
@@ -24,7 +24,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col s4">
+            <div class="col s12 m6 hide-on-med-and-up xl4">
                 <div class="__item">
                     <a class="__image" href="{$object.uri}">
                             <img alt="{$object.pagetitle}" class="responsive-img" src="//cdn.shopify.com/s/files/1/1528/2387/articles/9_555x370.jpg?v=1487592984">
@@ -36,6 +36,6 @@
                 </div>
             </div>
         </div>
-        {include file="views/button.view.tpl"}
+        {include file="views/buttons/view_all.tpl"}
     </div>
 </section>

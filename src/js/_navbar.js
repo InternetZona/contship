@@ -1,6 +1,9 @@
 function _navbar() {
     var elem = document.querySelector('.sidenav');
-    var instance = M.Sidenav.init(elem);
+
+    if (elem != null) {
+        M.Sidenav.init(elem);
+    }
 
     var scrollableLinks = document.getElementsByClassName('scrollable');
     [].forEach.call(scrollableLinks, function(link) {

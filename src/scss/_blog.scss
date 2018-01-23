@@ -1,5 +1,14 @@
 #blog{
-  [class*="__item"] {
+
+  .hide-on-med-and-up{
+    @media #{$extra-large-and-up} {
+      display: block!important;
+    }
+  }
+
+  .__item {
+    margin-bottom: 1rem;
+
     .__image {
       display: inline-block;
       opacity: 1;

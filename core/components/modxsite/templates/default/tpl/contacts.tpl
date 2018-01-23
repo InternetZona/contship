@@ -2,7 +2,6 @@
 
 {block name=page}
     <section id="contactus"">
-        {include file="views/sections/contacts.address.tpl"}
+        {include file="views/contacts/index.tpl"}
     </section>
-    {include file="views/sections/featured/base.tpl"}
 {/block}

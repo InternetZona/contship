@@ -1,0 +1,1 @@
+{extends file="views/countries/item.tpl"}

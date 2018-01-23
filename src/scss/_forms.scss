@@ -2,6 +2,10 @@
   background-color: rgba($primary-color, .85);
   position: relative;
 
+  @media #{$medium-and-down}{
+    padding-bottom: 1rem;
+  }
+
   .parallax-container{
     position: absolute;
     top:0;
@@ -37,8 +41,11 @@
   .form-wrapper{
     padding: 20px;
     position: relative;
-    top: -20px;
     background: white;
+
+    @media #{$large-and-up} {
+      top: -20px;
+    }
 
     @extend .z-depth-4;
 
@@ -55,6 +62,8 @@
 
 #callback {
   form{
+    margin:0;
+
     .input-field{
 
       .prefix{
@@ -72,7 +81,7 @@
     }
 
     p{
-      margin: 0;
+
 
       label{
         color: white;
@@ -114,18 +123,21 @@ form {
 
   .input-field{
     .prefix{
-      left: 12px;
+      left: 8px;
       top: 50%;
-      margin-top: -11px;
-      font-size: 1.5rem;
+      margin-top: -9px;
+      font-size: 1.2rem;
 
       +input,
       +textarea{
+        width: 100%;
+        box-sizing: border-box;
         margin: 0!important;
-        padding-left: 3rem!important;
+        padding-left: 2rem!important;
         box-shadow: none!important;
 
         + label {
+          margin-left: 2rem!important;
 
           &.active{
             display: none;

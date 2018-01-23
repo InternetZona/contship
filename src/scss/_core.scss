@@ -103,3 +103,24 @@ section{
     }
   }
 }
+
+.video-wrapper{
+  padding: 1rem;
+  border-radius: 5px;
+  background: $secondary-color;
+}
+
+#followus{
+  a{
+    svg{
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    &:hover,
+    &:active,
+    &:focus{
+      opacity: .8;
+    }
+  }
+}

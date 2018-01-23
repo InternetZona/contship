@@ -5,3 +5,11 @@
 #nav-desktop{
   display: inline-block;
 }
+
+#nav-mobile{
+  >li{
+    &:first-child{
+      height: 75px;
+    }
+  }
+}
