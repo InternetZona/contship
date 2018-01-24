@@ -1,12 +1,8 @@
 {extends file="basepage.tpl"}
 
 {block name=page}
-    <div class="row">
-        <div class="col s8">
-            <div class="content-wrapper">
-                {field name=content}
-            </div>
-        </div>
+    <div class="content-wrapper">
+        {field name=content}
     </div>
 
     {if $tvData = {tv name=featured}|json_decode:true}

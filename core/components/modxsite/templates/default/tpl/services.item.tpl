@@ -1,7 +1,7 @@
 {extends file="basepage.tpl"}
 
 {block name=page}
-    <div id="page-service-part">
+    <div id="page-services-item">
         <div class="row">
             <div class="col l9">
                 <div class="content-wrapper">
@@ -9,9 +9,7 @@
                 </div>
             </div>
             <div class="col l3">
-                <div class="navigation">
-                    {include file="views/menus/services.tpl" title="[[%contship.menu_countries_title]]"}
-                </div>
+
             </div>
         </div>
     </div>

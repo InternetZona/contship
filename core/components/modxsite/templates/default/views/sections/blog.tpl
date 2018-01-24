@@ -2,40 +2,39 @@
     <div class="container">
         <div class="h4 text-bold center-align __title">[[%contship.blog_title]]</div>
         <div class="row">
-            <div class="col s12 m6 xl4">
-                <div class="__item">
-                    <a class="__image" href="{$object.uri}">
-                            <img alt="{$object.pagetitle}" class="responsive-img" src="//cdn.shopify.com/s/files/1/1528/2387/articles/9_555x370.jpg?v=1487592984">
-                    </a>
-                    <div class="__detail">
-                        <div class="h5 __title"><a href="{$object.uri}">Top Benefits Of Hiring Our Logistics Service</a></div>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo enean dolor sit amet, consectetuer.</p>
+
+            {assign var=params value=[
+                'parent'    => 5
+                , 'limit'   => 3
+                , 'dir'     => 'desc'
+            ]}
+
+            {processor action='site/web/resources/getdata' ns='modxsite' params=$params assign=result}
+
+            {if $result.success}
+                {$i = 0}
+                {foreach $result.object as $object}
+                    {$i = $i +1}
+                    <div class="col s12 m6 {($i >= 3) ? 'hide-on-med-and-up': ''} xl4">
+                        <div class="__item">
+                            <a class="__image" href="{$object.uri}">
+
+                                {assign var=thumb value=[
+                                    "input" => $object.tvs.image.value,
+                                    "options" => "&w=360&h=240&zc=1&aoe=0&far=0"
+                                ]}
+
+                                <img alt="{$object.pagetitle}" class="responsive-img" src="{snippet name="phpthumbon" params=$thumb}">
+                            </a>
+                            <div class="__detail">
+                                <div class="h5 __title"><a href="{$object.uri}">{$object.pagetitle}</a></div>
+                                <p>{$object.introtext}</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col s12 m6 xl4">
-                <div class="__item">
-                    <a class="__image" href="{$object.uri}">
-                            <img alt="{$object.pagetitle}" class="responsive-img" src="//cdn.shopify.com/s/files/1/1528/2387/articles/9_555x370.jpg?v=1487592984">
-                    </a>
-                    <div class="__detail">
-                        <div class="h5 __title"><a href="{$object.uri}">Top Benefits Of Hiring Our Logistics Service</a></div>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo enean dolor sit amet, consectetuer.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m6 hide-on-med-and-up xl4">
-                <div class="__item">
-                    <a class="__image" href="{$object.uri}">
-                            <img alt="{$object.pagetitle}" class="responsive-img" src="//cdn.shopify.com/s/files/1/1528/2387/articles/9_555x370.jpg?v=1487592984">
-                    </a>
-                    <div class="__detail">
-                        <div class="h5 __title"><a href="{$object.uri}">Top Benefits Of Hiring Our Logistics Service</a></div>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo enean dolor sit amet, consectetuer.</p>
-                    </div>
-                </div>
-            </div>
+                {/foreach}
+             {/if}
         </div>
-        {include file="views/buttons/view_all.tpl"}
+        {include file="views/buttons/view_all.tpl" link=$modx->makeUrl(5)}
     </div>
 </section>

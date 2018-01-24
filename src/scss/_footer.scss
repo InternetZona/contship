@@ -1,5 +1,6 @@
 footer{
   #nav-footer{
+    margin-top: 0!important;
     @media #{$medium-and-up}{
       text-align: center;
     }

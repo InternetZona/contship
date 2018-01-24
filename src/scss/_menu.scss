@@ -1,0 +1,46 @@
+.navigation{
+  > :first-child{
+    margin-top: 0;
+  }
+
+  .__title{
+    border-bottom: 1px solid color('grey', 'lighten-3');
+  }
+}
+
+.child-menu{
+  margin: 0;
+  li{
+    padding: 2px 0;
+
+    a{
+      position:relative;
+      padding-left: 15px;
+      display: inline-block;
+      font-size: .9rem;
+      color: $primary-color!important;
+
+      i{
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: .8rem;
+      }
+
+      &:hover,
+      &:focus{
+        color: $secondary-color!important;
+      }
+    }
+
+    > ul{
+      margin-left: .75rem;
+
+      li{
+        a{
+          font-size: .8rem;
+        }
+      }
+    }
+  }
+}
