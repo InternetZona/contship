@@ -1,28 +1,62 @@
 function _carousel(){
-    var elem = document.querySelector('.carousel'),
-        instance = null;
+    var elems = document.querySelectorAll('.carousel');
 
-    if (elem != null) {
-        instance = M.Carousel.init(elem,{
-            dist:0,
-            shift:0,
-            padding:20,
-            indicators: true
-        });
+    if (elems != null) {
+        [].forEach.call(elems, function(elem){
 
-        var _scrollTimer = runScroll();
+            var props = {
+                indicators: true
+            };
 
-        elem.addEventListener('mouseover', function(){
-            clearInterval(_scrollTimer);
-        });
-        elem.addEventListener('mouseout', function() {
-            clearInterval(_scrollTimer);
-            _scrollTimer = runScroll();
+            switch(elem.id) {
+                case 'clients-carousel':
+                    props.dist = 0;
+                    props.shift = 0;
+                    props.padding = 20;
+                    break;
+
+                case 'testimonials-carousel':
+                    props.fullWidth = true;
+                    props.onCycleTo = function(item){
+                        this.el.style.height = item.offsetHeight + 'px';
+                    };
+                    break;
+
+                default:
+            }
+
+            var instance = M.Carousel.init(elem, props),
+                _timer = runScroll(instance);
+
+            elem.onmouseover = function(e) {
+                clearInterval(_timer);
+            };
+
+            elem.onmouseout = function(e) {
+                clearInterval(_timer);
+                _timer = runScroll(instance);
+            };
+
+            if (elem.id == 'testimonials-carousel') {
+
+                elem.style.height = calcHeight(elem);
+
+                window.onresize = function(e) {
+                    elem.style.height = calcHeight(elem);
+                };
+            }
         });
     }
-    function runScroll() {
+
+    function calcHeight(elem){
+        var newHeight = elem.querySelector('.active').offsetHeight + 'px';
+        console.log(newHeight);
+        return newHeight
+    }
+
+    function runScroll(instance) {
         return setInterval(function(){
             instance.next();
-        }, 4000);
+        }, instance.el.dataset.speed);
     }
 }

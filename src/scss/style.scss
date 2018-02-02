@@ -26,9 +26,17 @@
 
 $font-stack: -apple-system, BlinkMacSystemFont, 'A Futura Round', sans-serif !default;
 
+$h1-fontsize: 3.4rem !default;
+$h2-fontsize: 3rem !default;
+$h3-fontsize: 2.5rem !default;
+$h4-fontsize: 2.1rem !default;
+
 // Custom colors
 $primary-color: #016db6;
 $secondary-color: #212121;
+
+// Grid
+$num-cols: 24 !default;
 
 
 
@@ -55,3 +63,5 @@ $secondary-color: #212121;
 @import 'countries';
 @import 'goods';
 @import 'menu';
+@import 'testimonials';
+@import 'modals';

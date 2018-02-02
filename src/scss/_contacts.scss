@@ -1,4 +1,9 @@
 #contactus {
+
+  .row{
+    margin-bottom: 0;
+  }
+
   .__list{
 
     > li {
@@ -42,5 +47,11 @@
         }
       }
     }
+  }
+
+  .form-wrapper{
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border: 4px solid color('grey', 'lighten-3');
   }
 }

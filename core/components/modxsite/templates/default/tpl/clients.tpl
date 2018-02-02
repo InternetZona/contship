@@ -9,7 +9,7 @@
 
         <div class="row">
             {foreach {tv name=clients}|json_decode:true as $data}
-                <div class="col s12 m6 l4 xl3">
+                <div class="col s24 m12 l8 xl6">
                     <div class="__item">
                         <div class="overlay"></div>
 

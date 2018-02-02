@@ -9,6 +9,7 @@
 //= _tabs.js
 //= _tooltip.js
 //= _lang.js
+//= _map.js
 
 var App = {
     init: function () {
@@ -19,6 +20,8 @@ var App = {
         _tabs();
         _tooltip();
         _langbar();
+        _map();
+
         document.querySelector('body').classList.add('loaded');
     }
 };

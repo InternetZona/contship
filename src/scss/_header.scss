@@ -2,6 +2,19 @@ header{
   height: 7rem;
   line-height: 7rem;
 
+  .brand-logo{
+    margin-top: 1rem;
+    display: inline-block;
+
+    @media #{$medium-and-up} {
+      margin-top: 2rem;
+    }
+  }
+
+  .row{
+    margin-bottom: 0;
+  }
+
   .info-box{
     position: relative;
 
@@ -14,6 +27,13 @@ header{
       line-height: 7rem;
       color: $primary-color;
       font-size: 38px;
+
+      @media (min-width: 1350px) {
+        left: 40px;
+      }
+      @media (min-width: 1500px) {
+        left: 50px;
+      }
     }
 
     .info-box__item {

@@ -1,6 +1,6 @@
 <section id="blog" class="grey lighten-4 section">
     <div class="container">
-        <div class="h4 text-bold center-align __title">[[%contship.blog_title]]</div>
+        <div class="h4 text-bold center-align __title">[[%contship.blog_title? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]</div>
         <div class="row">
 
             {assign var=params value=[
@@ -15,10 +15,9 @@
                 {$i = 0}
                 {foreach $result.object as $object}
                     {$i = $i +1}
-                    <div class="col s12 m6 {($i >= 3) ? 'hide-on-med-and-up': ''} xl4">
+                    <div class="col s24 m12 {($i >= 3) ? 'hide-on-med-and-up': ''} xl8">
                         <div class="__item">
                             <a class="__image" href="{$object.uri}">
-
                                 {assign var=thumb value=[
                                     "input" => $object.tvs.image.value,
                                     "options" => "&w=360&h=240&zc=1&aoe=0&far=0"

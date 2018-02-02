@@ -4,7 +4,7 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col s12 l6 white-text">
+            <div class="col s24 l12 white-text">
                 <div class="__wrapper">
                     <a class="btn-floating btn-large white waves-light waves-effect">
                         <i class="material-icons">arrow_downward</i>
@@ -17,7 +17,7 @@
                     {/foreach}
                 </ul>
             </div>
-            <div class="col s12 offset-l1 l5 offset-xl2 xl4">
+            <div class="col s24 offset-l2 l10 offset-xl4 xl8">
                 {include file="views/forms/request.tpl"}
             </div>
         </div>

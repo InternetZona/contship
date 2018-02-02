@@ -1,15 +1,19 @@
 function _langbar(){
-    var elem = document.getElementById('lang-desktop');
 
-    if (elem != null) {
+    var elems = document.querySelectorAll('.fixed-action-btn');
+
+    [].forEach.call(elems, function(elem){
         M.FloatingActionButton.init(elem, {
             direction: 'bottom',
             hoverEnabled: false
         });
 
-        window.addEventListener('scroll', function(e){
-            M.FloatingActionButton.getInstance(document.getElementById('lang-desktop'))
-                .close();
-        });
-    }
+       if (elem.id == 'lang-desktop') {
+
+           window.addEventListener('scroll', function (e) {
+               M.FloatingActionButton.getInstance(document.getElementById(elem.id))
+                   .close();
+           });
+       }
+    });
 }

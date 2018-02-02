@@ -1,5 +1,16 @@
 <ul class="sidenav" id="nav-mobile">
-    <li></li>
+    <li class="header">
+        {include file="views/lang/mobile.tpl"}
+        {if {field name=id} == {config name=site_start} }
+            <span class="brand-logo">
+                        <img src="{$template_url}images/logo.png" class="responsive-img">
+                    </span>
+        {else}
+            <a href="#" class="brand-logo">
+                <img src="{$template_url}images/logo.png" class="responsive-img">
+            </a>
+        {/if}
+    </li>
     {$params= [
         'startId' => '0'
         , 'excludeDocs'=> '1'

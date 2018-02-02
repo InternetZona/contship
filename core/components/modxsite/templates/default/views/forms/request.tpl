@@ -1,34 +1,34 @@
 <div class="form-wrapper">
     <div class="form-title h6 center-align text-bold">
-        [[%contship.request_title]]
+        [[%contship.request_title? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]
     </div>
 
     {$key = rand()}
 
     <form class="row">
-        <div class="input-field col s12 m6 l12">
+        <div class="input-field col s24 m12 l24">
             <i class="material-icons prefix">person</i>
             <input id="request__name-{$key}" type="text" class="validate">
-            <label for="request__name-{$key}">[[%contship.username]]</label>
+            <label for="request__name-{$key}">[[%contship.username? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]</label>
         </div>
-        <div class="input-field col s12 m6 l12">
+        <div class="input-field col s24 m12 l24">
             <i class="material-icons prefix">email</i>
             <input id="request__email-{$key}" type="email" class="validate">
-            <label for="request__email-{$key}">[[%contship.email]]</label>
+            <label for="request__email-{$key}">[[%contship.email? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]</label>
         </div>
-        <div class="input-field col s12">
+        <div class="input-field col s24">
             <i class="material-icons prefix">create</i>
             <textarea id="request__comment-{$key}" class="materialize-textarea"></textarea>
-            <label for="request__comment-{$key}">[[%contship.comment]]</label>
+            <label for="request__comment-{$key}">[[%contship.comment? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]</label>
         </div>
         <p class=" col s12">
             <label>
                 <input type="checkbox" checked="checked" />
-                <span>[[%contship.form_confirm]]</span>
+                <span>[[%contship.form_confirm? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]</span>
             </label>
         </p>
-        <div class="center-align col s12">
-            <button type="submit" class="btn waves-effect">[[%contship.send]]</button>
+        <div class="center-align col s24">
+            <button type="submit" class="btn waves-effect">[[%contship.send? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]</button>
         </div>
     </form>
 </div>

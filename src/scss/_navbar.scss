@@ -1,5 +1,13 @@
 .nav-wrapper {
   text-align: center;
+
+  .brand-logo{
+    margin-top: 1rem;
+
+    > img{
+      max-height: 38px;
+    }
+  }
 }
 
 #nav-desktop{
@@ -8,8 +16,19 @@
 
 #nav-mobile{
   >li{
-    &:first-child{
+    &.header{
       height: 75px;
+      position: relative;
+
+      &:after{
+        content: "";
+        position: absolute;
+        left: 5rem;
+        right: 5rem;
+        bottom: 5px;
+        height: 4px;
+        background-color: $primary-color;
+      }
     }
   }
 }

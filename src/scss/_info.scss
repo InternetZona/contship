@@ -17,6 +17,14 @@
   }
 
   .btn{
-    margin-top: 1rem;
+    @media #{$large-and-up} {
+      margin-top: 1rem;
+    }
+  }
+
+  .video-wrapper{
+    @media #{$medium-and-down} {
+      margin-top: 1rem;
+    }
   }
 }

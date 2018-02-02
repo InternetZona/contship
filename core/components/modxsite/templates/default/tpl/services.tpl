@@ -14,7 +14,7 @@
         {if $result.success}
             <div class="row grid">
                 {foreach $result.object as $object}
-                    <div class="col s12 l4 cell">
+                    <div class="col s24 l8 cell">
                         <div class="service__item">
                             <div class="icons"> <i class="{$object.link_attributes}"></i></div>
                             <a href="{$object.uri}">

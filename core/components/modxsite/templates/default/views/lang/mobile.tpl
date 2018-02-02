@@ -1,5 +1,4 @@
-
-<div id="lang-desktop" class="fixed-action-btn hide-on-med-and-down">
+<div id="lang-mobile" class="fixed-action-btn hide-on-large-only">
     <a class="btn-floating transparent">
 
         {$culture = {config name=cultureKey}}

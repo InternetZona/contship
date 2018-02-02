@@ -1,8 +1,8 @@
 <section id="scheme-track-eu" class="section">
     <div class="container">
-        <div class="h4 text-bold center-align">[[%contship.track_eu]]</div>
+        <div class="h4 text-bold center-align">[[%contship.track_eu? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]</div>
         <div class="row">
-            <div class="col s12">
+            <div class="col s24">
                 <ul class="scheme">
 
                     {if $tvData}

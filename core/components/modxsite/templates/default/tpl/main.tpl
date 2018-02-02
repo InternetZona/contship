@@ -21,7 +21,7 @@
     {include file="views/request.tpl" tvData={tv name=featuredTrackEU}|json_decode:true}
     {include file="views/sections/about.tpl" object=$pages.object[3]|default:[]}
     {include file="views/callback.tpl"}
-    {include file="views/sections/testimonials.tpl"}
+    {include file="views/sections/testimonials.tpl" object=$pages.object[4]|default:[]}
     {include file="views/sections/blog.tpl"}
     {include file="views/sections/clients.tpl" object=$pages.object[6]|default:[]}
     {include file="views/sections/contacts.tpl"}

@@ -1,5 +1,5 @@
-<div class="col s6 m4 l3 cell">
-    <div class="__item">
+<div class="col s12 m8 l6 cell">
+    <div class="__item valign-wrapper">
         <a href="{$modx->makeUrl($data.target)|default:"#"}">
             {if $data.icon}
                 <i>{include file="svg/{$data.icon}.tpl"}</i>
@@ -7,9 +7,9 @@
             <span>{$data.title}</span>
         </a>
 
-        <a  href="{$modx->makeUrl($data.target)|default:"#"}">
+        <!--<a  href="{$modx->makeUrl($data.target)|default:"#"}">
             <div class="icons"> <i class="{$object.link_attributes}"></i></div>
             <div class="title">{$object.pagetitle}</div>
-        </a>
+        </a>-->
     </div>
 </div>

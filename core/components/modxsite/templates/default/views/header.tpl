@@ -1,10 +1,18 @@
 <header>
     <div class="container">
         <div class="row">
-            <div class="col hide-on-med-and-down m4">
-                logo
+            <div class="col hide-on-med-and-down l6 xl5">
+                {if {field name=id} == {config name=site_start} }
+                    <span class="brand-logo">
+                        <img src="{$template_url}images/logo.png" class="responsive-img">
+                    </span>
+                {else}
+                    <a href="#" class="brand-logo">
+                        <img src="{$template_url}images/logo.png" class="responsive-img">
+                    </a>
+                {/if}
             </div>
-            <div class="col s6 offset-m2 m4 l4 offset-xl2 xl3">
+            <div class="col s12 offset-m4 m8 offset-l2 l8 offset-xl5 xl7">
                 <div class="info-box">
                     <i class="material-icons hide-on-med-and-down">phone_iphone</i>
                     <div class="info-box__item">
@@ -15,7 +23,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col s6 m4 l4 xl3">
+            <div class="col s12 m8 l8 xl7">
                 <div class="info-box">
                     <i class="material-icons hide-on-med-and-down">mail_outline</i>
                     <div class="info-box__item">

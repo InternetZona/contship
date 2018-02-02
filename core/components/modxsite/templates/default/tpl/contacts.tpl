@@ -1,7 +1,9 @@
 {extends file="basepage.tpl"}
 
 {block name=page}
-    <section id="contactus"">
+    <section id="contactus">
         {include file="views/contacts/index.tpl"}
+        <div class="h5 text-bold center-align">[[%contship.feedback_title? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]</div>
+        {include file="views/forms/feedback.tpl"}
     </section>
 {/block}

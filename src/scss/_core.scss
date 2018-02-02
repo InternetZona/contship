@@ -1,4 +1,6 @@
-
+#main{
+  overflow: hidden;
+}
 
 .container{
   .row{
@@ -122,5 +124,11 @@ section{
     &:focus{
       opacity: .8;
     }
+  }
+}
+
+h1{
+  @media #{$small-and-down} {
+    text-align: center;
   }
 }

@@ -12,7 +12,7 @@
 
             {if $result.success}
                 {foreach $result.object as $object}
-                    <div class="col s12 m6 xl4 cell">
+                    <div class="col s24 m12 xl8 cell">
                         <div class="__item">
                             <a class="__image" href="{$object.uri}">
 
