@@ -3,7 +3,7 @@
         <div class="h4 text-bold center-align __title">{$object.pagetitle}</div>
         <div class="row">
             <div class="col offset-s2 s20 content-wrapper">
-                {$object.content}
+                {field name=content}
             </div>
         </div>
         {include file="views/buttons/view_all.tpl" link={$object.uri}}
