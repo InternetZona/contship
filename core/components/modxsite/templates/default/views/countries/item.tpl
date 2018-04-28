@@ -1,4 +1,4 @@
-<div class="col s12 m8 l6 cell">
+<div class="col s24 m8 l6 cell">
     <div class="__item valign-wrapper">
         <a href="{$modx->makeUrl($data.target)|default:"#"}">
             {if $data.icon}

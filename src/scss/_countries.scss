@@ -1,8 +1,10 @@
 #countries{
-  #asia-group,
-  #eu-group{
-    padding-top: 2rem;
+
+  .row{
+    margin-bottom: 0;
   }
+
+  h5{}
 
   .__item{
     margin-bottom: 1rem;
@@ -10,8 +12,14 @@
     box-sizing: border-box;
     position: relative;
 
-    @media #{$large-and-up} {
-      margin-bottom: 2rem;
+    :first-child & {
+      @media #{$small-and-down} {
+        margin-top: 1rem;
+      }
+    }
+
+    @media #{$medium-and-up} {
+      margin-top: 2rem;
     }
 
     a{
