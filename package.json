@@ -31,6 +31,7 @@
     "gulp-sourcemaps": "^2.6.3",
     "gulp-uglify": "^3.0.0",
     "materialize-css": "^1.0.0-alpha.3",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "validate-js": "^2.0.1"
   }
 }
