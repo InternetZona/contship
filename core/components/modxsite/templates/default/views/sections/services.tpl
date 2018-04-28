@@ -25,6 +25,5 @@
 
             {/foreach}
         </div>
-        {include file="views/buttons/view_all.tpl" link=$catalog->uri}
     </div>
 </section>
