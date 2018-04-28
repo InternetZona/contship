@@ -1,6 +1,7 @@
 <div class="col s24 m8 l6 cell">
     <div class="__item valign-wrapper">
-        <a href="{$modx->makeUrl($data.target)|default:"#"}">
+        {$url = ($data.target) ? $modx->makeUrl($data.target) : '#'}
+        <a href="{$url}">
             {if $data.icon}
                 <i>{include file="svg/{$data.icon}.tpl"}</i>
             {/if}
