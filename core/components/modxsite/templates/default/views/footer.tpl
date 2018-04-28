@@ -14,7 +14,7 @@
     <div class="footer-copyright">
         <div class="container">
             © {$smarty.now|date_format:"%Y"} [[%contship.copy? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]
-            <a class="grey-text text-lighten-4" href="#!">[[%contship.policy? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]</a>
+            <a class="grey-text text-lighten-4" href="/assets/files/politic.doc" target="_blank">[[%contship.policy? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]</a>
         </div>
     </div>
 </footer>
