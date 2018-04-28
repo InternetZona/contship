@@ -25,7 +25,9 @@
         {include file="views/sections/testimonials.tpl" object=$pages.object[4]|default:[]}
     </noindex>
     {include file="views/sections/blog.tpl"}
+    <!--
     {include file="views/sections/clients.tpl" object=$pages.object[6]|default:[]}
+    -->
     {include file="views/sections/contacts.tpl"}
 
 {/block}
