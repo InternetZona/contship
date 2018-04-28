@@ -1,0 +1,1 @@
+{extends file="messages/emails/managers/feedback.tpl"}

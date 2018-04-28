@@ -64,6 +64,10 @@
   form{
     margin:0;
 
+    .error{
+      color: white!important;
+    }
+
     .input-field{
 
       .prefix{
@@ -121,14 +125,29 @@ form {
           height: auto!important;
         }
       }
+
+      .error{
+        font-size: .85rem;
+        color: color("red", "darken-3");
+        display: block;
+        padding-left: 35px;
+      }
+    }
+  }
+
+  label{
+    +.error{
+      font-size: .85rem;
+      color: color("red", "darken-3");
+      display: block;
     }
   }
 
   .input-field{
     .prefix{
       left: 8px;
-      top: 50%;
-      margin-top: -9px;
+      top: 0;
+      margin-top: 15px;
       font-size: 1.2rem;
 
       +input,
