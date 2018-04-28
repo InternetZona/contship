@@ -21,7 +21,7 @@
             <textarea id="request__comment-{$key}" class="materialize-textarea"></textarea>
             <label for="request__comment-{$key}">[[%contship.comment? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]</label>
         </div>
-        <p class=" col s12">
+        <p class=" col s24">
             <label>
                 <input type="checkbox" checked="checked" />
                 <span>[[%contship.form_confirm? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]</span>

@@ -109,6 +109,8 @@
 
 form {
   p{
+    margin-top: 0;
+
     label {
       height: auto;
 
@@ -116,6 +118,7 @@ form {
         + span{
           font-size:.8rem!important;
           line-height: 1rem!important;
+          height: auto!important;
         }
       }
     }
