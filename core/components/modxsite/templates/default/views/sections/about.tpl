@@ -1,6 +1,6 @@
 <section id="aboutus">
     <div class="container">
-        <div class="h4 text-bold center-align __title">{$object.pagetitle}</div>
+        <h2 class="h2 text-bold center-align __title">{$object.pagetitle}</h2>
         <div class="row">
             <div class="col offset-s2 s20 content-wrapper">
                 {field name=content}
