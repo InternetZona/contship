@@ -26,7 +26,7 @@ const settings = {
 
 gulp.task('style', function() {
     return gulp.src(settings.src.scss + '/style.scss')
-        .pipe(sourcemaps.init())
+        //.pipe(sourcemaps.init())
         .pipe(compass({
             project: path.join(__dirname),
             css: settings.src.css,
@@ -37,7 +37,7 @@ gulp.task('style', function() {
             cascade: false
         }))
         .pipe(cleancss())
-        .pipe(sourcemaps.write())
+        //.pipe(sourcemaps.write())
         .pipe(rename({
             suffix: '.min'
         }))
@@ -50,12 +50,12 @@ gulp.task('style', function() {
 gulp.task('scripts', function() {
     gulp.src(settings.src.js + '/scripts.js')
         .pipe(rigger())
-        .pipe(sourcemaps.init())
+        //.pipe(sourcemaps.init())
         .pipe(uglify())
         .pipe(rename({
             suffix: '.min'
         }))
-        .pipe(sourcemaps.write())
+        //.pipe(sourcemaps.write())
         .pipe(gulp.dest(settings.prod.js))
         .pipe(notify({
             message: 'Scripts task complete'

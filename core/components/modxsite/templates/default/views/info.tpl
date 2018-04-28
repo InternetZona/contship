@@ -29,14 +29,14 @@
                 </a>
             </div>
         </div>
-        <div class="row">
+        <!-- <div class="row">
             <div class="col s24 offset-m1 m22 offset-l4 l16">
                 <div class="video-wrapper center-align z-depth-4">
                     <video class="responsive-video" controls>
-                        <source src="{$template_url}video/demo.mp4" type="video/mp4">
+                        <source src="#" type="video/mp4">
                     </video>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </section>
