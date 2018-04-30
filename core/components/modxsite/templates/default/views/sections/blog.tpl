@@ -34,6 +34,6 @@
                 {/foreach}
              {/if}
         </div>
-        {include file="views/buttons/view_all.tpl" link=$modx->makeUrl(5)}
+        {include file="views/buttons/view_all.tpl" link=$modx->makeUrl(5) title="[[%contship.all_blog? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]"}
     </div>
 </section>
