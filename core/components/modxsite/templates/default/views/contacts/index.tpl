@@ -15,16 +15,16 @@
                 </ul>
             </div>
             <div class="col s24 m12 cell">
-                <ul class="__list">
+                <ul class="__list __icons">
                     <li><span>[[%contship.service_department]]</span></li>
-                    <li><a href="tel:+74956442341;111">+7 (495) 644-23-41 [[%contship.add_digit]] 111</a></li>
+                    <li class="valign-wrapper"><i class="material-icons">phone</i> <a href="tel:+74956442341;111">+7 (495) 644-23-41 [[%contship.add_digit]] 111</a></li>
                 </ul>
             </div>
             <div class="col s24 m12 cell">
-                <ul class="__list">
+                <ul class="__list __icons">
                     <li><span>[[%contship.transportations_departmen]]</span></li>
-                    <li><a href="mailto:logistics@contship.ru">logistics@contship.ru</a></li>
-                    <li><a href="tel:+74956442341;111">+7 (495) 644-23-41 [[%contship.add_digit]] 111</a></li>
+                    <li class="valign-wrapper"><i class="material-icons">mail</i> <a href="mailto:logistics@contship.ru">logistics@contship.ru</a></li>
+                    <li class="valign-wrapper"><i class="material-icons">phone</i> <a href="tel:+74956442341;111">+7 (495) 644-23-41 [[%contship.add_digit]] 111</a></li>
                 </ul>
             </div>
         </div>
