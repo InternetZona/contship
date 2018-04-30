@@ -1,6 +1,6 @@
 <section id="services" class="grey lighten-4 section">
     <div class="container">
-        <div class="h4 text-bold center-align __title">
+        <div class="h3 text-bold center-align __title">
             {$catalog = $modx->getObject('modResource', 2)}
             {$catalog->pagetitle}
         </div>

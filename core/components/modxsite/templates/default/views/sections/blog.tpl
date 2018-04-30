@@ -1,6 +1,6 @@
 <section id="blog" class="grey lighten-4 section">
     <div class="container">
-        <div class="h4 text-bold center-align __title">[[%contship.blog_title? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]</div>
+        <div class="h3 text-bold center-align __title">[[%contship.blog_title? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]</div>
         <div class="row">
 
             {assign var=params value=[

@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row grid">
             <div class="col s24 m14 l12 cell valign-wrapper">
-                <div class="h5 bold white-text">
+                <div class="h3 bold white-text">
                     [[%contship.callback_title? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]
                 </div>
             </div>

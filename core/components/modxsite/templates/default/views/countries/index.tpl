@@ -1,6 +1,6 @@
 <section id="countries" class="section">
     <div class="container">
-        <div class="h5 text-bold center-align">[[%contship.countries? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]</div>
+        <div class="h3 text-bold center-align">[[%contship.countries? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]</div>
         <div class="row">
             <div class="col s24">
                 <ul class="tabs">

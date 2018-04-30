@@ -1,6 +1,6 @@
 <section id="testimonials" class="section grey lighten-4">
     <div class="container">
-        <div class="h4 text-bold center-align __title">{$object.pagetitle}</div>
+        <div class="h3 text-bold center-align __title">{$object.pagetitle}</div>
 
         <div class="row">
             <div class="col s24 offset-m2 m20 offset-l3 l18 offset-xl4 xl16">

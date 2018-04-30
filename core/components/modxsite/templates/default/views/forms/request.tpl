@@ -1,5 +1,5 @@
 <div class="form-wrapper">
-    <div class="form-title h6 center-align text-bold">
+    <div class="form-title h5 center-align text-bold">
         [[%contship.request_title? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]
     </div>
 

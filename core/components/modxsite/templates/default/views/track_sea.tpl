@@ -1,7 +1,7 @@
 <section id="scheme-track-sea" class="section">
     <div class="container">
         <div class="__title">
-            <div class="h5 text-bold center-align">[[%contship.track_sea_title? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]</div>
+            <div class="h3 text-bold center-align">[[%contship.track_sea_title? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]</div>
             <p class="center-align">[[%contship.track_sea_desc? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]</p>
         </div>
         <div class="row grid">

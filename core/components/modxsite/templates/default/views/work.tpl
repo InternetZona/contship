@@ -1,6 +1,6 @@
 <section id="scheme-work" class="section">
     <div class="container">
-        <div class="h5 text-bold center-align __title">[[%contship.scheme_work_title? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]</div>
+        <div class="h3 text-bold center-align __title">[[%contship.scheme_work_title? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]</div>
         <div class="row grid">
             {if $tvData}
                 {$i = 0}
