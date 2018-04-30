@@ -4,13 +4,13 @@
             <div class="col s24 m12 cell">
                 <ul class="__list __icons">
                     <li><span>[[%contship.head_office]]</span></li>
-                    <li class="valign-wrapper"><i class="material-icons">location_on</i> <a class="modal-trigger" href="#modal-map">[[%contship.address]]</a></li>
+                    <li class="valign-wrapper"><i class="material-icons">location_on</i> <a class="modal-trigger text--underline" href="#modal-map">[[%contship.address]]</a></li>
                 </ul>
             </div>
             <div class="col s24 m12 cell">
                 <ul class="__list __icons">
                     <li><span>[[%contship.trade_consultations]]</span></li>
-                    <li class="valign-wrapper"><i class="material-icons">mail</i> <a href="mailto:info@contship.ru">info@contship.ru</a></li>
+                    <li class="valign-wrapper"><i class="material-icons">mail</i> <a href="mailto:info@contship.ru" class="text--underline">info@contship.ru</a></li>
                     <li class="valign-wrapper"><i class="material-icons">phone</i> <a href="tel:+74956442341;110">+7 (495) 644-23-41 [[%contship.add_digit]] 110</a></li>
                 </ul>
             </div>
@@ -23,7 +23,7 @@
             <div class="col s24 m12 cell">
                 <ul class="__list __icons">
                     <li><span>[[%contship.transportations_departmen]]</span></li>
-                    <li class="valign-wrapper"><i class="material-icons">mail</i> <a href="mailto:logistics@contship.ru">logistics@contship.ru</a></li>
+                    <li class="valign-wrapper"><i class="material-icons">mail</i> <a href="mailto:logistics@contship.ru" class="text--underline">logistics@contship.ru</a></li>
                     <li class="valign-wrapper"><i class="material-icons">phone</i> <a href="tel:+74956442341;111">+7 (495) 644-23-41 [[%contship.add_digit]] 111</a></li>
                 </ul>
             </div>

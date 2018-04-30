@@ -67,3 +67,12 @@ $num-cols: 24 !default;
 @import 'menu';
 @import 'testimonials';
 @import 'modals';
+
+.text{
+  &--underline {
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
