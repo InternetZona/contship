@@ -6,7 +6,6 @@
                 {field name=content}
             </div>
         </div>
-        {include file="views/buttons/view_all.tpl" link={$object.uri}}
     </div>
 </section>
 
