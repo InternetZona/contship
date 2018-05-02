@@ -301,7 +301,9 @@
       .scheme{
         margin: 0!important;
         li{
-          width: calc(100%/2);
+          @media #{$large-and-up} {
+            width: calc(100%/2);
+          }
 
           &:last-child {
             padding-bottom: 0 !important;
