@@ -13,7 +13,7 @@
     </li>
     {$params= [
         'startId' => '0'
-        , 'excludeDocs'=> '1'
+        , 'excludeDocs'=> {config name=site_start}
     ]}
 
     {$i = {field name=id} == {config name=site_start}}

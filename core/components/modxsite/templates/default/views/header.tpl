@@ -7,7 +7,7 @@
                         <img src="{$template_url}images/logo.png" class="responsive-img">
                     </span>
                 {else}
-                    <a href="#" class="brand-logo">
+                    <a href="{$modx->makeUrl({config name=site_start})}" class="brand-logo">
                         <img src="{$template_url}images/logo.png" class="responsive-img">
                     </a>
                 {/if}
