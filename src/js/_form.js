@@ -59,6 +59,12 @@ function _form() {
                   html: 'Сообщение успешно отправлено!'
                 });
 
+                var modalInstance = M.Modal.getInstance(form.closest('.modal'));
+
+                if (modalInstance !== null) {
+                  modalInstance.close();
+                }
+
                 form.reset();
 
               } else {

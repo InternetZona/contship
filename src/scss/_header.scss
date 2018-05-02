@@ -1,4 +1,8 @@
 header{
+  @media #{$medium-and-down} {
+    height: 3rem;
+    line-height: 3rem;
+  }
   height: 7rem;
   line-height: 7rem;
 
@@ -50,13 +54,13 @@ header{
         font-weight: bold;
       }
 
-      > span {
+      /*> span {
         padding-top: 1.8rem;
         text-transform: uppercase;
-      }
+      }*/
 
       > a{
-        padding-top: .9rem;
+        padding-top: 2.7rem;
       }
     }
   }

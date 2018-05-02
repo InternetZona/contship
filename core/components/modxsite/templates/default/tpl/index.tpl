@@ -28,6 +28,7 @@
     </div>
 
     {include file="views/lang/desktop.tpl"}
+    {include file="views/sections/modals/feedback.tpl"}
 
     <script async src="{$template_url}js/scripts.min.js?{filemtime(MODX_BASE_PATH|cat:$template_url|cat:'js/scripts.min.js')}"></script>
 </body>
