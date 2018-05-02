@@ -1,4 +1,4 @@
-<section id="blog" class="grey lighten-4 section">
+<section id="blog" class="grey lighten-3 section">
     <div class="container">
         <div class="h3 text-bold center-align __title">[[%contship.blog_title? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]</div>
         <div class="row">
@@ -20,7 +20,7 @@
                             <a class="__image" href="{$object.uri}">
                                 {assign var=thumb value=[
                                     "input" => $object.tvs.image.value,
-                                    "options" => "&w=360&h=240&zc=1&aoe=0&far=0"
+                                    "options" => "&w=420&h=280&zc=1&aoe=0&far=0"
                                 ]}
 
                                 <img alt="{$object.pagetitle}" class="responsive-img" src="{snippet name="phpthumbon" params=$thumb}">

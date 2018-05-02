@@ -18,7 +18,7 @@
 
                                 {assign var=thumb value=[
                                 "input" => $object.tvs.image.value,
-                                "options" => "&w=360&h=240&zc=1&aoe=0&far=0"
+                                "options" => "&w=420&h=280&zc=1&aoe=0&far=0"
                                 ]}
 
                                 <img alt="{$object.pagetitle}" class="responsive-img" src="{snippet name="phpthumbon" params=$thumb}">
