@@ -8,6 +8,9 @@
 
   .__item {
     margin-bottom: 1rem;
+    height: 100%;
+    background: white;
+    border: 3px solid color('grey', 'lighten-3');
 
     .__image {
       display: inline-block;
@@ -31,7 +34,6 @@
     }
     .__detail {
       padding: 0 20px;
-      border: 3px solid color('grey', 'lighten-3');
 
       .__title > a {
         color: $secondary-color;
