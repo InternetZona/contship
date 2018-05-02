@@ -60,7 +60,10 @@ header{
       }*/
 
       > a{
-        padding-top: 2.7rem;
+        padding-top: .9rem;
+        @media #{$large-and-up} {
+          padding-top: 2.7rem;
+        }
       }
     }
   }
