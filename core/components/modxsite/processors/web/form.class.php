@@ -17,5 +17,18 @@ class modWebFormProcessor extends modSiteWebFormProcessor{
 
         return parent::initialize();
     }
+
+    protected function getManagerMailSubject(){
+        $subject = "";
+        $site_name = $this->modx->getOption('site_name');
+        switch ($this->getProperty('template')) {
+            case 'callback':
+                $subject = "Запрос на обратный звонок с сайта {$site_name}";
+                break;
+            default:
+                $subject = "Сообщение с сайта {$site_name}";
+        }
+        return $subject;
+    }
 }
 return 'modWebFormProcessor';

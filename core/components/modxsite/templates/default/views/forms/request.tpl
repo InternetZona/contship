@@ -7,6 +7,7 @@
 
     <form name="request" class="row">
         <input type="hidden" name="action" value="web/form">
+        <input type="hidden" name="subject" value="{$subject}">
         <div class="input-field col s24 m12 l24">
             <i class="material-icons prefix">person</i>
             <input id="request__name-{$key}" type="text" name="username">
