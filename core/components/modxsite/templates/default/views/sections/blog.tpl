@@ -1,7 +1,7 @@
 <section id="blog" class="grey lighten-3 section">
     <div class="container">
         <div class="h3 text-bold center-align __title">[[%contship.blog_title? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]</div>
-        <div class="row">
+        <div class="row grid">
 
             {assign var=params value=[
                 'parent'    => 5
@@ -15,7 +15,7 @@
                 {$i = 0}
                 {foreach $result.object as $object}
                     {$i = $i +1}
-                    <div class="col s24 m12 {($i >= 3) ? 'hide-on-med-and-up': ''} xl8">
+                    <div class="col cell s24 m12 {($i >= 3) ? 'only-large': ''} xl8">
                         <div class="__item">
                             <a class="__image" href="{$object.uri}">
                                 {assign var=thumb value=[

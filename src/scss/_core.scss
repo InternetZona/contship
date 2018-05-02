@@ -15,14 +15,12 @@ html {
   }
 }
 
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start;
-}
-
 .row {
   &.grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    flex: 1;
     .cell{
       margin-left: 0;
     }

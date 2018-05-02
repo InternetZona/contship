@@ -1,14 +1,18 @@
 #blog{
 
-  .hide-on-med-and-up{
-    @media #{$extra-large-and-up} {
-      display: block!important;
+  .only-large {
+    @media (min-width: 601px) and (max-width: 993px) {
+      display: none!important;
     }
+  }
+
+  .cell{
+    display: flex;
   }
 
   .__item {
     margin-bottom: 1rem;
-    height: 100%;
+    flex: 1;
     background: white;
     border: 3px solid color('grey', 'lighten-3');
 
