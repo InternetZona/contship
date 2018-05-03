@@ -1,5 +1,9 @@
 #scheme-work {
 
+  .row {
+    margin-bottom: 0;
+  }
+
   .__item {
     position: relative;
     padding-left: 3rem;
@@ -42,6 +46,11 @@
 }
 
 #scheme-track-eu {
+  padding-top: 2rem;
+
+  .row {
+    margin-bottom: 0;
+  }
   .scheme{
     @media #{$large-and-up} {
       display: flex;
