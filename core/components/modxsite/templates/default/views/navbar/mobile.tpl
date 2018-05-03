@@ -32,7 +32,6 @@
 
         {$params= [
         'startId' => '0'
-        ,'excludeDocs'=> {config name=site_start}
         ,'rowTpl'   => 'wf.row.main.tpl'
         ]}
 
