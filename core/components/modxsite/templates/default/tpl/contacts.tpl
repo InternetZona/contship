@@ -7,3 +7,7 @@
         {include file="views/forms/feedback.tpl"}
     </section>
 {/block}
+
+{block name=body append}
+    {include file="views/sections/map.tpl"}
+{/block}
