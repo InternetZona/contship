@@ -1,4 +1,4 @@
-
+<!--
 <div id="lang-desktop" class="fixed-action-btn hide-on-med-and-down">
     <a class="btn-floating transparent">
 
@@ -34,3 +34,5 @@
             </a></li>
     </ul>
 </div>
+
+-->

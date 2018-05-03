@@ -1,3 +1,5 @@
+<!--
+
 <div id="lang-mobile" class="fixed-action-btn hide-on-large-only">
     <a class="btn-floating transparent">
 
@@ -33,3 +35,5 @@
             </a></li>
     </ul>
 </div>
+
+-->
