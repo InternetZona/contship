@@ -36,3 +36,4 @@ $_lang['contship.orgn'] = 'ОГРН: 1087746677248';
 $_lang['contship.service_department'] = 'Отдел по работе с клиентами';
 $_lang['contship.transportations_departmen'] = 'Отдел международных перевозок';
 $_lang['contship.followus'] = 'Мы в соц. сетях';
+$_lang['contship.all_blog'] = 'Все публикации';
