@@ -11,8 +11,13 @@ function _navbar() {
         link.addEventListener('click', function(e){
             e.preventDefault();
 
+            if (this.closest('.sidenav') !== null) {
+              var instance = M.Sidenav.getInstance(document.querySelector('.sidenav'));
+              instance.close();
+            }
+
             var block = document.querySelector(link.hash);
             animateScrollTo(block.offsetTop - 30);
-        })
+        });
     });
 }
