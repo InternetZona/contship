@@ -1,4 +1,4 @@
-<section id="testimonials" class="section grey lighten-4">
+<section id="testimonials" class="section">
     <div class="container">
         <div class="h3 text-bold center-align __title">{$object.pagetitle}</div>
 

@@ -1,4 +1,4 @@
-<section id="scheme-work" class="section">
+<section id="scheme-work" class="section grey lighten-3">
     <div class="container">
         <div class="h3 text-bold center-align __title">[[%contship.scheme_work_title? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]</div>
         <div class="row grid">
