@@ -50,4 +50,3 @@
         </div>
     </div>
 </div>
-{include file="views/sections/modals/map.tpl"}

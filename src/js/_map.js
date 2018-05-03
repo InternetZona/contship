@@ -21,6 +21,8 @@ function _map() {
                         iconImageOffset: [-5, -38]
                     });
 
+                map.behaviors.disable('scrollZoom');
+
                 map.geoObjects
                     .add(placemark);
             });
