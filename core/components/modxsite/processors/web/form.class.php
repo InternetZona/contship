@@ -23,10 +23,10 @@ class modWebFormProcessor extends modSiteWebFormProcessor{
         $site_name = $this->modx->getOption('site_name');
         switch ($this->getProperty('template')) {
             case 'callback':
-                $subject = "Запрос на обратный звонок с сайта {$site_name}";
+                $subject = "Запрос на обратный звонок.";
                 break;
             default:
-                $subject = "Сообщение с сайта {$site_name}";
+                $subject = "Сообщение с сайта.";
         }
         return $subject;
     }

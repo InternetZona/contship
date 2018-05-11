@@ -34,7 +34,7 @@
             <div class="col s14 m12 xl24">
                 <ul class="__list">
                     <li><span>[[%contship.details]]</span></li>
-                    <li>{config name=site_name}</li>
+                    <li>ООО «Контшип-Экспресс»</li>
                     <li>[[%contship.tax_number]]</li>
                     <li>[[%contship.orgn]]</li>
                 </ul>
