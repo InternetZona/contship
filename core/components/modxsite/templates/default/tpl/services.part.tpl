@@ -14,6 +14,7 @@
                     {if $tv = {tv name=serviceCountriesMenu}}
                         {include file="views/menus/aside.tpl" data=explode('||', $tv) title="[[%contship.menu_countries_title? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]"}
                     {/if}
+                    {include file="views/menus/template.tpl" title=`Услуги` template=`11 &namespace=`modxsite` &language=`[[++cultureKey]]`]]"}
                 </div>
             </div>
         </div>
