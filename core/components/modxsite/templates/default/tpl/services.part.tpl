@@ -13,8 +13,7 @@
                 <div class="navigation">
                     {if $tv = {tv name=serviceCountriesMenu}}
                         {include file="views/menus/aside.tpl" data=explode('||', $tv) title="[[%contship.menu_countries_title? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]"}
-                        {include file="views/menus/template.tpl" parents=$tv title="Товары" template="12"}
-                        {include file="views/menus/template.tpl" parents=$tv title="Другие услуги" template="11"}
+                        {include file="views/menus/template.tpl" exclude="-{field name="id"}" parents="{field name="parent"}" title="Другие услуги" template="8"}
                     {/if}
                 </div>
             </div>

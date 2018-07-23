@@ -2,6 +2,7 @@
 <ul class="child-menu">
     {snippet name="pdoMenu" params=[
     'parents'   => {$parents|replace:'||':','}
+    ,'resources' => {$exclude}
     ,'templates' => {$template}
     , 'level'   => 1
     , 'tpl'  => 'wf.row.menu.tpl'
