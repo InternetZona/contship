@@ -4,6 +4,7 @@
 ]
 ,'limit'    => 0
 ,'cache'    => true
+,'sort'    => 'pagetitle'
 ]}
 
 {processor action="site/web/resources/getdata" params=$params ns="modxsite" assign=result}
