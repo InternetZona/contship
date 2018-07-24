@@ -10,9 +10,11 @@
             </div>
             <div class="col s12 l6 rightcontent">
                 <div class="navigation">
-                    {if $tv = {tv name=serviceCountriesMenu}}
+                    {if {field name=isfolder} == 1}
                         {include file="views/menus/template.tpl" parents="{field name="id"}" title="Услуги" template="11"}
                         {include file="views/menus/template.tpl" parents="{field name="id"}" title="Товары" template="12"}
+                    {/if}
+                    {if $tv = {tv name=serviceCountriesMenu}}
                         {include file="views/menus/aside.tpl" data=explode('||', $tv) title="География перевозок"}
                     {/if}
                 </div>
