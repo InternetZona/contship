@@ -16,8 +16,7 @@
             {foreach $result.object as $object}
 
                 <div class="col s24 m12 l8 cell">
-                    <!--<a class="service__item" href="{$object.uri}"> -->
-                    <a class="service__item" href="#">
+                    <a class="service__item" href="{$object.uri}">
                         <div class="icons"> <i class="{$object.link_attributes}"></i></div>
                         <div class="title">{$object.pagetitle}</div>
                         <p>{$object.introtext}</p>
