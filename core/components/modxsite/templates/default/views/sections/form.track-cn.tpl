@@ -13,7 +13,7 @@
                         <i class="material-icons">arrow_downward</i>
                     </a>
                 </div>
-                <div class="h5 text-bold">[[%contship.featured]]</div>
+                <div class="h5 text-bold">[[%contship.featured? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]</div>
                 <ul class="featured-list">
                     <li><i class="material-icons">adjust</i> Не тербуется экспертная лицензия у продавца, таможенное оформление производится в Китае через агенста с экспортной лицензией</li>
                     <li><i class="material-icons">adjust</i> Складские операции в Китае (Шанхае), Японии (Токио) переупаковка, пересчет</li>

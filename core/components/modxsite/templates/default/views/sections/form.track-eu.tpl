@@ -10,7 +10,7 @@
                         <i class="material-icons">arrow_downward</i>
                     </a>
                 </div>
-                <div class="h5 text-bold">[[%contship.featured]]</div>
+                <div class="h5 text-bold">[[%contship.featured? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]</div>
                 <ul class="featured-list">
                     <li><i class="material-icons">adjust</i> Склады консолидации: Германия, Литва, Венгрия</li>
                     <li><i class="material-icons">adjust</i> Экономия на стоимости доставки</li>
