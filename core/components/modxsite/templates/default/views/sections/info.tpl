@@ -25,7 +25,7 @@
                     <img src="{$template_url}images/about-us.jpg" alt="{field name=pagetitle}" class="responsive-img">
                 </div>
                 <a href="#" class="btn btn-large waves-effect waves-light">
-                    <i class="material-icons left">visibility</i> [[%contship.presentations]]
+                    <i class="material-icons left">visibility</i> [[%contship.presentation? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]
                 </a>
             </div>
         </div>

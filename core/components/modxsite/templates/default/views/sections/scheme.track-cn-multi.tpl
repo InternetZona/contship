@@ -1,8 +1,8 @@
 <section id="scheme-track-cn-multi" class="section">
     <div class="container">
         <div class="__title">
-            <div class="h4 text-bold center-align">[[%contship.scheme_track_swa_title]]</div>
-            <div class="h5 center-align">[[%contship.scheme_track_swa_desc]]</div>
+            <div class="h4 text-bold center-align">[[%contship.scheme_track_swa_title? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]</div>
+            <div class="h5 center-align">[[%contship.scheme_track_swa_desc? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]</div>
         </div>
         <div class="row grid">
             <div class="col s6 cell valign-wrapper">

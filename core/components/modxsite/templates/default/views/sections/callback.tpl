@@ -3,7 +3,7 @@
         <div class="row grid">
             <div class="col s6 cell valign-wrapper">
                 <div class="h5 bold white-text">
-                    [[%contship.callback_title]]
+                    [[%contship.callback_title? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]
                 </div>
             </div>
             <div class="col s6 cell">

@@ -10,7 +10,7 @@
                         <i class="material-icons">arrow_downward</i>
                     </a>
                 </div>
-                <div class="h4 text-bold">[[%contship.featured]]</div>
+                <div class="h4 text-bold">[[%contship.featured? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]</div>
                 <ul class="featured-list">
                     {foreach $tvData as $data}
                         <li><i class="material-icons">adjust</i> {$data.title}</li>
