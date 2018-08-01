@@ -4,7 +4,36 @@
             <div class="h3 text-bold center-align">[[%contship.track_sea_title? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]</div>
             <p class="center-align">[[%contship.track_sea_desc? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]</p>
         </div>
-        <div class="row grid">
+
+        <div class="row">
+            <div class="col s24">
+                <ul class="tabs">
+
+                    {$i = 0}
+
+                    {foreach $tvData as $data}
+                        <li class="tab col {if $i == 0}offset-s2{/if} s4"><a href="#sea-tab-{$data.MIGX_id}">{$data.title}</a></li>
+                        {$i = $i + 1}
+                    {/foreach}
+                </ul>
+            </div>
+
+            {foreach $tvData as $data}
+                <div id="sea-tab-{$data.MIGX_id}" class="col s24">
+                    {$schema = $data.schema|json_decode:true|array_slice:-7}
+
+                    <ul class="scheme">
+                        {foreach $schema as $data}
+                            {include file="views/schemes/track_item.tpl" data=$data}
+                        {/foreach}
+                    </ul>
+
+
+                </div>
+            {/foreach}
+        </div>
+
+        <!--<div class="row grid">
             <div class="col s24 valign-wrapper">
                 <ul class="scheme">
 
@@ -63,6 +92,6 @@
                 </ul>
             </div>
 
-        </div>
+        </div> -->
     </div>
 </section>

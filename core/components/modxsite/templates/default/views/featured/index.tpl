@@ -1,5 +1,7 @@
 <div id="featured" class="row">
 
+    <div class="h3 text-bold center-align __title">Наши преимущества</div>
+
     {assign var=params value=[
     'where' => [
     'id'    => 3
@@ -11,7 +13,7 @@
 
     {if $tvData = $result.object.tvs.featured.value|json_decode:true}
         {foreach $tvData as $data}
-            <div class="col s12 m6 l3">
+            <div class="col s24 m12 l6">
                 {include file="views/featured/item.tpl" data=$data}
             </div>
         {/foreach}

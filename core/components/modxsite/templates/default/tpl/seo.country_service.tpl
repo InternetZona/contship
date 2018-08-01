@@ -3,12 +3,12 @@
 {block name=page}
     <div id="page-seo">
         <div class="row">
-            <div class="col l9">
+            <div class="col s12 l18">
                 <div class="content-wrapper">
                     {field name=content}
                 </div>
             </div>
-            <div class="col l3">
+            <div class="col s12 l6">
                 <div class="navigation">
                     {$tvData = {tv name=seoPages}|json_decode:true}
                     {foreach $tvData as $data}

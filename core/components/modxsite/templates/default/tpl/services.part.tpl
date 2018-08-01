@@ -7,12 +7,22 @@
                 <div class="content-wrapper">
                     {field name=content}
                 </div>
+
             </div>
             <div class="col l6">
                 <div class="navigation">
-                    {include file="views/menus/services.tpl" title="[[%contship.menu_countries_title? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]"}
+                    {if $tv = {tv name=serviceCountriesMenu}}
+                        {include file="views/menus/aside.tpl" data=explode('||', $tv) title="[[%contship.menu_countries_title? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]"}
+                    {/if}
                 </div>
             </div>
         </div>
     </div>
+    {if $schemaTv = {tv name=schema}|json_decode:true}
+        {include file="views/schema.tpl" tvData=$schemaTv|array_slice:-7}
+    {/if}
+
+    {include file="views/featured/index.tpl"}
+
+    {include file="views/request2.tpl"}
 {/block}

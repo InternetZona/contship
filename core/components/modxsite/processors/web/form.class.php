@@ -19,14 +19,17 @@ class modWebFormProcessor extends modSiteWebFormProcessor{
     }
 
     protected function getManagerMailSubject(){
-        $subject = "";
-        $site_name = $this->modx->getOption('site_name');
-        switch ($this->getProperty('template')) {
-            case 'callback':
-                $subject = "Запрос на обратный звонок.";
-                break;
-            default:
-                $subject = "Сообщение с сайта.";
+        $subject = $this->getProperty('subject', '');
+        #$site_name = $this->modx->getOption('site_name');
+
+        if (!$subject) {
+            switch ($this->getProperty('template')) {
+                case 'callback':
+                    $subject = "Запрос на обратный звонок.";
+                    break;
+                default:
+                    $subject = "Сообщение с сайта.";
+            }
         }
         return $subject;
     }

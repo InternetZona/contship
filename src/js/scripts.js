@@ -30,6 +30,19 @@ var App = {
 
         $('input[type="tel"]').mask("+7 (999) 999-99-99");
 
+        $('#scroller-top').on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 800);
+        });
+
+        $(window).on('scroll', function(e) {
+          if($(window).scrollTop() > 100 && $(window).width() > 600) {
+            $('#scroller-top:hidden').show();
+          } else {
+            $('#scroller-top:visible').hide();
+          }
+        });
+
         document.querySelector('body').classList.add('loaded');
     }
 };

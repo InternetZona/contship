@@ -76,3 +76,18 @@ $num-cols: 24 !default;
     }
   }
 }
+
+#scroller-top {
+  @extend .light-blue, .darken-4;
+  opacity: .75;
+
+  @media #{$small-and-down} {
+    display: none!important;
+  }
+
+  &:hover,
+  &:focus {
+    @extend .light-blue, .darken-3;
+    opacity: 1;
+  }
+}

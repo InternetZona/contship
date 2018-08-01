@@ -160,26 +160,15 @@
 }
 
 #scheme-track-sea{
+  padding-top: 2rem;
+
+  .row {
+    margin-bottom: 0;
+  }
   .scheme{
     @media #{$large-and-up} {
       display: flex;
       justify-content: center;
-    }
-
-    &:not(.sub) {
-      >li{
-        &:not(:nth-child(4)){
-          @media #{$large-and-up} {
-            width: calc(100% / 7);
-            padding-top: 48px;
-          }
-        }
-        &:nth-child(4){
-          @media #{$large-and-up} {
-            width: calc(100% / 7 * 2);
-          }
-        }
-      }
     }
 
     > li{
@@ -187,6 +176,10 @@
 
       @media #{$medium-and-down}{
         padding: 1rem;
+      }
+
+      @media #{$large-and-up} {
+        width: calc(100% / 7);
       }
 
       .__item{
@@ -198,9 +191,10 @@
           display: inline-block;
           border: 2px solid color('grey', 'lighten-3');
         }
+
         .icons{
-          @media #{$medium-and-down} {
-            display:none;
+          @media #{$medium-and-down}{
+            display: none;
           }
 
           @media #{$large-and-up} {
@@ -272,74 +266,6 @@
 
               @extend %arrow;
             }
-          }
-        }
-      }
-
-      .tabs{
-        margin-top: -1rem;
-        margin-bottom: 1rem;
-      }
-
-      .tab{
-        a{
-          @media #{$large-and-up}{
-            padding: 0 5px!important;
-          }
-
-          i{
-            @media #{$medium-and-up}{
-              display: none;
-            }
-
-            @media #{$large-and-up} {
-              display: block;
-            }
-
-            &:before{
-              font-size: 30px;
-            }
-          }
-
-          span{
-            font-size: .75rem;
-          }
-        }
-      }
-
-      .scheme{
-        margin: 0!important;
-        li{
-          @media #{$large-and-up} {
-            width: calc(100%/2);
-          }
-
-          &:last-child {
-            padding-bottom: 0 !important;
-          }
-        }
-      }
-
-      >.row{
-        margin:0!important;
-
-        .col{
-          padding:0!important;
-        }
-      }
-
-      + li{
-        .__item{
-
-          &:before{
-            top: -18px;
-            transform: rotate(90deg);
-
-            @media #{$large-and-up}{
-              display: none!important;
-            }
-
-            @extend %arrow;
           }
         }
       }
