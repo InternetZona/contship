@@ -29,7 +29,7 @@
                     </label>
                 </p>
                 <div class="center-align col s24">
-                    <button type="submit" class="btn waves-effect">[[%contship.send? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]</button>
+                    <button onclick="yaCounter10207042.reachGoal('send');" type="submit" class="btn waves-effect">[[%contship.send? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]</button>
                 </div>
             </form>
         </div>

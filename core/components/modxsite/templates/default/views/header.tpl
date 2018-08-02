@@ -26,7 +26,7 @@
                 <div class="info-box">
                     <i class="material-icons hide-on-med-and-down">mail_outline</i>
                     <div class="info-box__item">
-                        <a href="#modal-feedback" class="modal-trigger">
+                        <a onclick="yaCounter10207042.reachGoal('letter');" href="#modal-feedback" class="modal-trigger">
                             <span>[[%contship.feedback? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]</span>
                         </a>
                     </div>
