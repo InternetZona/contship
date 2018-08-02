@@ -59,13 +59,15 @@ function _form() {
                   html: 'Сообщение успешно отправлено!'
                 });
 
-                var modalInstance = M.Modal.getInstance(form.closest('.modal'));
+                var modal = form.closest('.modal');
 
-                if (modalInstance !== null) {
+                if (modal !== null) {
+                  var modalInstance = M.Modal.getInstance(modal);
+
                   modalInstance.close();
                 }
 
-                form.reset();
+                $form.trigger('reset');
 
               } else {
                 M.toast({

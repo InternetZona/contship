@@ -16,5 +16,5 @@
             </div>
         </div>
     {/if}
-
+    {include file="views/request2.tpl"}
 {/block}

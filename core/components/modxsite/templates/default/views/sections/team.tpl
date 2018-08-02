@@ -1,6 +1,6 @@
 <section id="team" class="section grey lighten-4">
     <div class="container">
-        <div class="h5 text-bold center-align __title">[[%contship.team_title]]</div>
+        <div class="h5 text-bold center-align __title">[[%contship.team_title? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]</div>
         <div class="row">
 
             {if $tvData}

@@ -1,3 +1,15 @@
 #callback{
   background: $primary-color;
+
+  &-content {
+    border-top: 4px solid $primary-color;
+    border-bottom: 4px solid $primary-color;
+
+    .h-title{
+      @extend .h4;
+      width: 100%;
+      text-align: center;
+    }
+
+  }
 }

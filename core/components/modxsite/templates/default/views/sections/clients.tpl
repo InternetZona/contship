@@ -1,6 +1,6 @@
 <section id="clients" class="grey lighten-4 section">
     <div class="container">
-        <div class="h4 text-bold center-align __title">[[%contship.clients_title]]</div>
+        <div class="h4 text-bold center-align __title">[[%contship.clients_title? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]</div>
         <div id="clients-carousel" class="carousel carousel-fixed-item" data-speed="4000">
 
             {$list = $object.tvs.clients.value|json_decode:true|array_slice:-10}
