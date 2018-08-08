@@ -8,10 +8,20 @@
                     <li class="tab col s12 l7"><a href="#eu-group">[[%contship.countries_eu? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]</a></li>
                 </ul>
             </div>
+
+            {assign var=params value=[
+            'where' => [
+            'id'    => 1
+            ]
+            , 'current' => true
+            ]}
+
+            {processor action="site/web/resources/getdata" ns="modxsite" params=$params assign=result}
+
             <div id="asia-group" class="col s24">
 
                 <div class="row grid">
-                    {foreach {tv name=asiaDelivery}|json_decode:true as $data}
+                    {foreach $result.object.tvs.asiaDelivery.value|json_decode:true as $data}
                         {include file="views/countries/item.tpl" data=$data}
                     {/foreach}
                 </div>
@@ -20,7 +30,7 @@
             <div id="eu-group" class="col s24">
 
                 <div class="row grid">
-                    {foreach {tv name=euDelivery}|json_decode:true as $data}
+                    {foreach $result.object.tvs.euDelivery.value|json_decode:true as $data}
                         {include file="views/countries/item.tpl" data=$data}
                     {/foreach}
                 </div>

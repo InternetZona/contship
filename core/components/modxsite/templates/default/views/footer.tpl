@@ -5,6 +5,7 @@
             {$params= [
                 'startId' => '0'
                 , 'excludeDocs'=> '1'
+            , 'level'=> '1'
                 , 'rowTpl'  => 'wf.row.main.tpl'
             ]}
 
