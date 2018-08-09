@@ -3,12 +3,12 @@
 {block name=page}
     <div id="page-services-country">
         <div class="row">
-            <div class="col s12 l18 leftcontent">
+            <div class="col s18 l18 leftcontent">
                 <div class="content-wrapper">
                     {field name=content}
                 </div>
             </div>
-            <div class="col s12 l6 rightcontent">
+            <div class="col s18 l6 rightcontent">
                 <div class="navigation">
                     {if {field name=isfolder} == 1}
                         {include file="views/menus/template.tpl" parents="{field name="id"}" title="Услуги" template="11"}
