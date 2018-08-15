@@ -13,7 +13,7 @@
 
     {if $tvData = $result.object.tvs.featured.value|json_decode:true}
         {foreach $tvData as $data}
-            <div class="col s24 m12 l6">
+            <div class="col s12 m12 l6">
                 {include file="views/featured/item.tpl" data=$data}
             </div>
         {/foreach}

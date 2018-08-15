@@ -30,11 +30,11 @@
                         </a>
                 </div>
             </div>
-            <div class="col s12 m6 l5 xl6">
+            <div class="col s12 m7 l5 xl6">
                 <div class="info-box">
                     <i class="material-icons hide-on-med-and-down">mail_outline</i>
                     <div class="info-box__item">
-                        <a onclick="yaCounter10207042.reachGoal('letter');" href="#modal-feedback" class="modal-trigger">
+                        <a onclick="yaCounter10207042.reachGoal('letter');" href="#modal-feedback" class="modal-trigger letter">
                             <span>[[%contship.feedback? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]</span>
                         </a>
                     </div>

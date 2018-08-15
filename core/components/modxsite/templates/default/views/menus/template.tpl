@@ -1,3 +1,4 @@
+<div class="clear"></div>
 {if $menu = {snippet name="pdoMenu" params=[
 'parents'   => {$parents|replace:'||':','}
 ,'resources' => {$exclude}
