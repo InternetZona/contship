@@ -3,13 +3,13 @@
 {block name=page}
     <div id="page-service-part">
         <div class="row">
-            <div class="col l18 leftcontent">
+            <div class="col s24 l18 leftcontent">
                 <div class="content-wrapper">
                     {field name=content}
                 </div>
 
             </div>
-            <div class="col l6 rightcontent">
+            <div class="col s24 l6 rightcontent">
                 <div class="navigation">
                     {if $tv = {tv name=servicePagesMenu}}
                         {include file="views/menus/aside.tpl" data=explode('||', $tv) title="[[%contship.menu_countries_title? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]"}

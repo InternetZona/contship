@@ -16,8 +16,8 @@
                 {foreach $result.object as $object}
                     <div class="col s24 l8 cell">
                         <div class="service__item">
-                            <div class="icons"> <i class="{$object.link_attributes}"></i></div>
                             <a href="{$object.uri}">
+                            <div class="icons"> <i class="{$object.link_attributes}"></i></div>
                                 <div class="title">{$object.pagetitle}</div>
                             </a>
                             {include file="views/menus/childs.tpl" parent=$object.id}

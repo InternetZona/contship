@@ -3,12 +3,12 @@
 {block name=page}
     <div id="page-services-item">
         <div class="row">
-            <div class="col l18 leftcontent">
+            <div class="col s24 l18 leftcontent">
                 <div class="content-wrapper">
                     {field name=content}
                 </div>
             </div>
-            <div class="col l6 rightcontent">
+            <div class="col s24 l6 rightcontent">
                 {include file="views/menus/template.tpl" exclude="-{field name="id"}" parents="{field name="parent"}" title="Услуги" template="11"}
                 {include file="views/menus/template.tpl" exclude="-{field name="id"}" parents="{field name="parent"}" title="Товары" template="12"}
 

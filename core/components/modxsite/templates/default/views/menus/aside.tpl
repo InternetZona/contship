@@ -14,9 +14,9 @@
     <ul class="child-menu">
         {foreach $result.object as $object}
 
-            {$activeClass = ($object.id == {field name=id}) ? 'class="active"' : '' }
+            {$activeClass = ($object.id == {field name=id}) ? 'active' : '' }
 
-            <li {$activeClass}><a href="{$object.uri}"><i class="material-icons">chevron_right</i> {$object.menutitle|default:$object.pagetitle}</a></li>
+            <li class="col s8 {$activeClass}"><a href="{$object.uri}"><i class="material-icons">chevron_right</i> {$object.menutitle|default:$object.pagetitle}</a></li>
 
         {/foreach}
     </ul>
