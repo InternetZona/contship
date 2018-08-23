@@ -16,7 +16,7 @@
 
             {$activeClass = ($object.id == {field name=id}) ? 'active' : '' }
 
-            <li class="col s8 {$activeClass}"><a href="{$object.uri}"><i class="material-icons">chevron_right</i> {$object.menutitle|default:$object.pagetitle}</a></li>
+            <li class="col s8 l24 {$activeClass}"><a href="{$object.uri}"><i class="material-icons">chevron_right</i> {$object.menutitle|default:$object.pagetitle}</a></li>
 
         {/foreach}
     </ul>
