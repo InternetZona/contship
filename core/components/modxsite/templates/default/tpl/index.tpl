@@ -31,6 +31,7 @@
     {include file="views/lang/desktop.tpl"}
     {include file="views/sections/modals/feedback.tpl"}
     {include file="views/sections/modals/callback.tpl"}
+    {include file="views/sections/modals/zayavka.tpl"}
     <div class="scrollup">
         <i class="material-icons">arrow_drop_up</i>
     </div>
