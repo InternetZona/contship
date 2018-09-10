@@ -16,6 +16,7 @@
         <div class="container">
             © {$smarty.now|date_format:"%Y"} [[%contship.copy? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]
             <a class="grey-text text-lighten-4" href="/assets/files/politic.doc" target="_blank">[[%contship.policy? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]</a>
+            <label><div class="grey-text text-lighten-4">* Предложения на сайте не являются публичной офертой</div></label>
         </div>
     </div>
 </footer>

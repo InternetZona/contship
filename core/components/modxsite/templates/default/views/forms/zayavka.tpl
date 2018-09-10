@@ -9,32 +9,32 @@
     </div>
     <div class="input-field col s24 l8">
         <i class="material-icons prefix">person</i>
-        <input id="zayavka__username-{$key}" type="text" name="username" class="require-group">
+        <input id="zayavka__username-{$key}" type="text" name="username" class="require-group" required>
         <label for="zayavka__username-{$key}">Контактное лицо</label>
     </div>
     <div class="input-field col s24 l8">
         <i class="material-icons prefix">phone</i>
-        <input id="zayavka__phone-{$key}" type="tel" name="phone" class="require-group">
+        <input id="zayavka__phone-{$key}" type="tel" name="phone" class="require-group" required>
         <label for="zayavka__phone-{$key}">Телефон</label>
     </div>
     <div class="input-field col s24 l8">
         <i class="material-icons prefix">mail</i>
-        <input id="zayavka__email-{$key}" type="email" name="email" class="require-group">
+        <input id="zayavka__email-{$key}" type="email" name="email" class="require-group" required>
         <label for="zayavka__email-{$key}">E-mail</label>
     </div>
     <div class="input-field col s24 l8">
         <i class="material-icons prefix">undo</i>
-        <input id="zayavka__otkuda-{$key}" type="text" name="otkuda" class="require-group">
+        <input id="zayavka__otkuda-{$key}" type="text" name="otkuda" class="require-group" required>
         <label for="zayavka__otkuda-{$key}">Откуда</label>
     </div>
     <div class="input-field col s24 l8">
         <i class="material-icons prefix">redo</i>
-        <input id="zayavka__kuda-{$key}" type="text" name="kuda" class="require-group">
+        <input id="zayavka__kuda-{$key}" type="text" name="kuda" class="require-group" required>
         <label for="zayavka__kuda-{$key}">Куда</label>
     </div>
     <div class="input-field col s24 l8">
         <i class="material-icons prefix">line_weight</i>
-        <input id="zayavka__ves-{$key}" type="text" name="ves" class="require-group">
+        <input id="zayavka__ves-{$key}" type="text" name="ves" class="require-group" required>
         <label for="zayavka__ves-{$key}">Вес груза нетто</label>
     </div>
     <div class="input-field col s24 l8">
@@ -49,12 +49,12 @@
     </div>
     <div class="input-field col s24">
         <i class="material-icons prefix">description</i>
-        <textarea id="feedback__comment-{$key}" class="materialize-textarea" name="comment" class="require-group"></textarea>
+        <textarea id="feedback__comment-{$key}" class="materialize-textarea" name="comment" class="require-group" required></textarea>
         <label for="feedback__comment-{$key}">Описание груза</label>
     </div>
     <p class="col s24">
         <label>
-            <input type="checkbox" checked="checked" name="agree" />
+            <input required type="checkbox" checked="checked" name="agree" />
             <span>[[%contship.form_confirm? &topic=`contship` &namespace=`modxsite` &language=`[[++cultureKey]]`]]</span>
         </label>
     </p>
