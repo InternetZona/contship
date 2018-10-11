@@ -9,5 +9,5 @@
 , 'outerClass' => 'child-menu'
 ]}}
     <div class="h5 bold __title">{$title}</div>
-    {$menu}
+    <!--noindex-->{$menu}<!--/noindex-->
 {/if}
