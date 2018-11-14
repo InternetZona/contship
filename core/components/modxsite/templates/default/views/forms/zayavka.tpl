@@ -1,3 +1,20 @@
+{$idcore = {snippet name='pdoField' params=[
+'id'   => {field name=id}
+,'field' => 'id'
+,'topLevel' => 1
+]}}
+{if $idcore = 24}
+    {if {field name=menutitle}}
+    {$otkuda = {field name=menutitle}}
+{else}
+    {$otkuda = {snippet name='pdoField' params=[
+    'id'   => {field name=id}
+    ,'field' => 'menutitle'
+    ,'topLevel' => 2
+]}}
+{/if}
+{/if}
+
 {$key = rand()}
 <div class="form-wrapper">
 <form name="zayavka" class="row">
@@ -24,7 +41,7 @@
     </div>
     <div class="input-field col s24 l8">
         <i class="material-icons prefix">undo</i>
-        <input id="zayavka__otkuda-{$key}" type="text" name="otkuda" class="require-group" required>
+        <input id="zayavka__otkuda-{$key}" type="text" name="otkuda" class="require-group" value="{$otkuda}" required>
         <label for="zayavka__otkuda-{$key}">Откуда</label>
     </div>
     <div class="input-field col s24 l8">
