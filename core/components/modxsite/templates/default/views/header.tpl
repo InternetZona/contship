@@ -42,7 +42,7 @@
             </div>
             <div class="col s12 m6 l5 xl3 phoneouter">
                 <div class="info-box">
-                    <a onclick="yaCounter10207042.reachGoal('raschet');" href="#modal-zayavka" class="costdelivery modal-trigger btn blue-effect">
+                    <a onclick="yaCounter10207042.reachGoal('rashet_shapka');" href="#modal-zayavka" class="costdelivery modal-trigger btn blue-effect">
                         Рассчитать стоимость доставки
                     </a>
                 </div>
