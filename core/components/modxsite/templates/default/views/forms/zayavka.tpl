@@ -76,7 +76,7 @@
         </label>
     </p>
     <div class="center-align col s24">
-        <button type="submit" onclick="yaCounter10207042.reachGoal('raschet_send');" class="btn waves-effect">Оставить заявку</button>
+        <button type="submit" onclick="yaCounter10207042.reachGoal('raschet_send');" class="btn red waves-effect">Рассчитать</button>
     </div>
 </form>
 </div>
