@@ -73,6 +73,12 @@
         (function(){ var widget_id = '8Qe5S2aIoE';var d=document;var w=window;function l(){
             var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
     <!-- END JIVOSITE CODE -->
+        <script data-skip-moving="true">
+            (function(w,d,u){
+                var s=d.createElement('script');s.async=1;s.src=u+'?'+(Date.now()/60000|0);
+                var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+            })(window,document,'https://bitrix.contship.ru/upload/crm/site_button/loader_1_h05fi1.js');
+        </script>
     {/literal}
 </body>
 </html>
