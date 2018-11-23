@@ -18,4 +18,7 @@
             </div>
         </div>
     </div>
+    {include file="views/featured/index.tpl"}
+
+    {include file="views/request2.tpl"}
 {/block}
