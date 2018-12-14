@@ -11,7 +11,7 @@
             <div class="col s24 l6 rightcontent">
                 <div class="navigation">
                     {if {field name=isfolder} == 1}
-                        {include file="views/menus/template.tpl" parents="{field name="id"}" title="Услуги" template="11"}
+                        <!--noindex-->{include file="views/menus/template.tpl" parents="{field name="id"}" title="Услуги" template="11"}<!--/noindex-->
                         {include file="views/menus/template.tpl" parents="{field name="id"}" title="Товары" template="12"}
                     {/if}
                     {if $tv = {tv name=serviceCountriesMenu}}
