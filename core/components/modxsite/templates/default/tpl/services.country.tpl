@@ -13,6 +13,8 @@
                     {if {field name=isfolder} == 1}
                         <!--noindex-->
                         {include file="views/menus/template.tpl" parents="{field name="id"}" title="Услуги" template="11"}
+                        <!--/noindex-->
+                        <!--noindex-->
                         {include file="views/menus/template.tpl" parents="{field name="id"}" title="Товары" template="12"}
                         <!--/noindex-->
                     {/if}
