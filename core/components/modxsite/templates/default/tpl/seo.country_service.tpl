@@ -10,9 +10,12 @@
             </div>
             <div class="col s24 l6 rightcontent">
                 <div class="navigation">
+                    <!--noindex-->
                     {include file="views/menus/template.tpl" exclude="-{field name="id"}" parents="{field name="parent"}" title="Услуги" template="11"}
+                    <!--/noindex-->
+                    <!--noindex-->
                     {include file="views/menus/template.tpl" exclude="-{field name="id"}" parents="{field name="parent"}" title="Товары" template="12"}
-
+                    <!--/noindex-->
                     {if $tv = {snippet name="getTvParent" params=['id'   => {field name="id"}, 'tv'   => "serviceCountriesMenu"]}}
                         {include file="views/menus/aside.tpl" data=explode('||', $tv) title="География перевозок"}
                     {/if}
