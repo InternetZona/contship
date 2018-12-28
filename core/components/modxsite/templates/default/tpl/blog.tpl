@@ -10,7 +10,7 @@
             ],
             'limit'    => 15,
             'sort'  => 'menuindex',
-            'dir'   => 'asc',
+            'dir'   => 'desc',
             'getPage'   => true,
             'page'      => $smarty.get.page|default: 0
             ]}
