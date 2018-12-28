@@ -3,9 +3,16 @@
 {block name=page}
     <div id="page-blog">
         <div class="row grid">
+
             {assign var=params value=[
-                'parent'    => {field name=id}
-                , 'dir'     => 'desc'
+            'where' => [
+            'parent'    => {field name=id}
+            ],
+            'limit'    => 15,
+            'sort'  => 'menuindex',
+            'dir'   => 'asc',
+            'getPage'   => true,
+            'page'      => $smarty.get.page|default: 0
             ]}
 
             {processor action='site/web/resources/getdata' ns='modxsite' params=$params assign=result}
@@ -31,6 +38,9 @@
                     </div>
                 {/foreach}
             {/if}
+            <ul class="pagination col s24 m24 l24 xl24">
+                [[+page.nav]]
+            </ul>
         </div>
     </div>
 {/block}
