@@ -26,4 +26,5 @@
     {include file="views/featured/index.tpl"}
 
     {include file="views/request2.tpl"}
+    {include file="views/sections/internal_testimonials.tpl"}
 {/block}

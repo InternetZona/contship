@@ -6,6 +6,7 @@
         <div class="container">
         {include file="views/featured/index.tpl"}
         {include file="views/request2.tpl"}
+            {include file="views/sections/internal_testimonials.tpl"}
         </div>
     {/block}
 {/block}
