@@ -6,5 +6,5 @@
 
 {processor action="site/web/resources/getdata" params=$params ns="modxsite" assign=pages}
 <!--noindex-->
-{include file="views/sections/testimonials.tpl" object=$pages.object[4]|default:[]}
+{include file="views/sections/testimonials_pages.tpl" object=$pages.object[4]|default:[]}
 <!--/noindex-->

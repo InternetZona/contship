@@ -1,5 +1,4 @@
 <section id="testimonials" class="section">
-    <div class="container">
         <div class="h3 text-bold center-align __title">{$object.pagetitle}</div>
 
         <div class="row">
@@ -27,5 +26,4 @@
             </div>
         </div>
 
-    </div>
 </section>
