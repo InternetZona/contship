@@ -14,7 +14,9 @@
     {if $tvData = $result.object.tvs.featured.value|json_decode:true}
         {foreach $tvData as $data}
             <div class="col s12 m12 l6">
+                <div class="fea-panel">
                 {include file="views/featured/item.tpl" data=$data}
+                </div>
             </div>
         {/foreach}
     {/if}
