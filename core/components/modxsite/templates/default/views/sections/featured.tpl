@@ -6,7 +6,9 @@
             {if $tvData}
                 {foreach $tvData as $data}
                     <div class="col s12 l6">
+                        <div class="fea-panel">
                         {include file="views/featured/item.tpl" data=$data}
+                        </div>
                     </div>
                 {/foreach}
             {/if}
