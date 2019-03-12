@@ -39,6 +39,9 @@
                         </ul>
 
                     {/foreach}
+                    <!--noindex-->
+                    {include file="views/banners/presentation.tpl"}
+                    <!--/noindex-->
                 </div>
             </div>
         </div>

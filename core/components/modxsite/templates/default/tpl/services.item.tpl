@@ -18,6 +18,9 @@
                 {if $tv = {snippet name="getTvParent" params=['id'   => {field name="id"}, 'tv'   => "serviceCountriesMenu"]}}
                     {include file="views/menus/aside.tpl" data=explode('||', $tv) title="География перевозок"}
                 {/if}
+                <!--noindex-->
+                {include file="views/banners/presentation.tpl"}
+                <!--/noindex-->
             </div>
         </div>
     </div>
