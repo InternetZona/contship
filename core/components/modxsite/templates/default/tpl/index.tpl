@@ -3,8 +3,22 @@
     {snippet name="MetaX@MetaX"}
 
     <title>{field name=longtitle}</title>
-    <link type="text/css" rel="stylesheet" href="{$template_url}css/style.min.css?{filemtime(MODX_BASE_PATH|cat:$template_url|cat:'css/style.min.css')}"  media="screen,projection"/>
-    <link type="text/css" rel="stylesheet" href="{$template_url}css/izstyle.css?{filemtime(MODX_BASE_PATH|cat:$template_url|cat:'css/izstyle.css')}"  media="screen,projection"/>
+
+    [[MinifyX?
+    &minifyCss=`1`
+    &minifyJs=`1`
+    &registerCss=`default`
+    &registerJs=`default`
+    &cssSources=`
+    {$template_url}css/style.min.css,
+    {$template_url}css/izstyle.css
+    `
+    &jsSources=`
+    {$template_url}js/scripts.min.js,
+    {$template_url}js/izscripts.js,
+    `
+    ]]
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     {literal}
@@ -46,7 +60,17 @@
 
         {/block}
 
-        {include file="views/footer.tpl"}
+        {if {field name=id} != 1}
+            {include file="views/sections/contacts.tpl"}
+        {/if}
+
+        {snippet name="AjaxSnippet" params=[
+        'snippet'   => 'load'
+        ,'tpl'     => 'footer.tpl'
+        ,'parents' => '0'
+        , 'as_mode'  => 'onscroll'
+        , 'loadtext'  => ''
+        ]}
 
     </div>
 
@@ -58,8 +82,6 @@
         <i class="material-icons">arrow_drop_up</i>
     </div>
     <script src="{$template_url}js/jquery-3.3.1.js?{filemtime(MODX_BASE_PATH|cat:$template_url|cat:'js/jquery-3.3.1.js')}"></script>
-    <script async src="{$template_url}js/scripts.min.js?{filemtime(MODX_BASE_PATH|cat:$template_url|cat:'js/scripts.min.js')}"></script>
-    <script async src="{$template_url}js/izscripts.js?{filemtime(MODX_BASE_PATH|cat:$template_url|cat:'js/izscripts.js')}"></script>
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript" >
         (function (d, w, c) {
@@ -89,12 +111,14 @@
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/10207042" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
+    {snippet name="AjaxSnippet" params=[
+    'snippet'   => 'load'
+    ,'tpl'     => 'jivosite.tpl'
+    ,'parents' => '0'
+    , 'as_mode'  => 'onscroll'
+    , 'loadtext'  => ''
+    ]}
     {literal}
-    <!-- BEGIN JIVOSITE CODE -->
-    <script type='text/javascript'>
-        (function(){ var widget_id = '8Qe5S2aIoE';var d=document;var w=window;function l(){
-            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
-    <!-- END JIVOSITE CODE -->
         <script data-skip-moving="true">
             (function(w,d,u){
                 var s=d.createElement('script');s.async=1;s.src=u+'?'+(Date.now()/60000|0);

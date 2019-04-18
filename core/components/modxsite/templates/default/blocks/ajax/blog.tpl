@@ -1,0 +1,1 @@
+{include file="views/sections/blog.tpl"}

@@ -1,6 +1,3 @@
-{if {field name=id} != 1}
-{include file="views/sections/contacts.tpl"}
-{/if}
 <footer class="page-footer">
     <div class="container">
         <ul id="nav-footer">
