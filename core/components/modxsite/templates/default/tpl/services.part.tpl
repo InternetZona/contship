@@ -26,6 +26,7 @@
         {include file="views/schema.tpl" tvData=$schemaTv|array_slice:-7}
     {/if}
 
+    {include file="views/countries/index.tpl"}
     {include file="views/featured/index.tpl"}
 
     {include file="views/request2.tpl"}

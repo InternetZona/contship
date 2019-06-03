@@ -46,6 +46,7 @@
             </div>
         </div>
     </div>
+    {include file="views/countries/index.tpl"}
     {include file="views/featured/index.tpl"}
     {include file="views/request2.tpl"}
     {include file="views/sections/internal_testimonials.tpl"}
