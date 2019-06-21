@@ -11,6 +11,7 @@
             'limit'    => 15,
             'sort'  => 'menuindex',
             'dir'   => 'desc',
+            'showhidden' => 1,
             'getPage'   => true,
             'page'      => $smarty.get.page|default: 0
             ]}
